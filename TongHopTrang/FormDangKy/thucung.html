@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+        }
+        .topbar-left{
+            background-color: #FCE7AD;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+        }
+        .text-header{
+           
+            font-size: 22px;
+            padding-left: 10px;
+        }
+        .div-image{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center ;
+        }
+        .topbar-left p{
+            padding-left: 10px;
+            font-size: 18px;
+            width: 90%;
+        }
+        .topbar-left ul{
+            width: 85%;
+        }
+        .topbar-left ul li{
+            font-size: 18px;
+            padding-top: 10px;
+        }
+        .topbar-right{
+            box-shadow: 2px 2px 2px gray;
+        }
+        .topbar-right input,select{
+            width: 100%;
+            height: 20px;
+        }
+        .topbar-right select{
+            width: 103%;
+            height: 25px;
+        }
+        .div-btn button{
+            background-color: #FCE7AD;
+            font-size: 18px;
+            padding: 5px 20px;
+            border-radius: 25px;
+            color: white;
+            text-shadow: 0px 1px 2px black;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="topbar-left">
+            <div class="div-image">
+                <img src="../IMAGE/tải xuống.jpeg" alt="" style="width: 50%;">
+                <span class="text-header">CHÚNG TÔI Ở ĐÂY CHĂM SÓC THÚ CƯNG CỦA BẠN</span>
+            </div>
+            <p>Vui lòng điền thông tin vào biểu mẫu để đặt lịch khám cho thú cưng của bạn tại phòng khám của Pet Shop</p>
+            <p>Sau khi nhận được yêu cầu, nhân viên của chúng tôi sẽ liên hệ xác nhận với bạn qua điện thoại. Ngoài ra, bạn cũng có thể:</p>
+            <ul>
+                <li>Đặt hẹn khám qua hotline 097 3333 409. </li>
+                <li>Trong trường hợp cần khám gấp, vui lòng đưa thú cưng đến trực tiếp phòng khám tại một trong chi nhánh của chúng tôi</li>
+            </ul>
+        </div>
+        <div class="topbar-right">
+            <form >
+                <table cellspacing="10px">
+                    <tr>
+                        <td>Họ tên khách hàng</td>
+                        <td>Số điện thoại</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>Địa chỉ</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Loại thú cưng</td>
+                        <td>Dịch vụ</td>
+                    </tr>
+                    <tr>
+                        <td><select name="" id="">
+                            <option value="">--Chọn loại thú cưng--</option>
+                        </select></td>
+                        <td>
+                            <select name="" id=""><option value="">--Chọn dịch vụ--</option></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ngày khám</td>
+                        <td>Giờ khám</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><select name="" id="">
+                            <option value="">--Chọn giờ khám--</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td>Thông tin thêm</td>
+                       
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea name="" id="" cols="57" rows="10"></textarea></td>
+                       
+                    </tr>
+                
+                    <tr>
+                       <td class="div-btn" colspan="2" align="center"><button type="submit" >Đặt hẹn</button></td>
+                    </tr>
+                    
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
