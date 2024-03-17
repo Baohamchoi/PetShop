@@ -13,7 +13,14 @@ function renderMenu() {
     <div class="container-fluid">
         <ul class="navbar-nav" style="color: black; font-size: 18px;">
             <li class="navbar-item ps-5 pe-3"><a href="#" class="nav-link">Giới thiệu</a></li>
-            <li class="navbar-item pe-3"><a href="#" class="nav-link">Dịch vụ</a></li>
+            <li class="navbar-item dropdown pe-3">
+                <a href="#" class="nav-link">Dịch vụ</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Spa thú cưng</a></li>
+                    <li><a href="#" class="dropdown-item">Khám sức khỏe</a></li>
+                    <li><a href="#" class="dropdown-item">Khách sạn thú cưng</a></li>
+                </ul>
+            </li>
             <li class="navbar-item pe-3"><a href="#" class="nav-link">Sản phẩm</a></li>
             <li class="navbar-item pe-3"><a href="#" class="nav-link">Thú cưng</a></li>
             <li class="navbar-item pe-3"><a href="#" class="nav-link">Liên hệ</a></li>
