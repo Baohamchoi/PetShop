@@ -6,35 +6,84 @@
 function renderMenu() {
     const menuString = `<link rel="stylesheet" href="../../Boostrap/bootstrap.min.css">
     <script src="../../Boostrap/bootstrap.bundle.min.js"></script>
-    <header class="navbar navbar-expand-sm bg-light rounded-5 p-0 fixed-top" style="box-shadow: 2px 2px 15px black;">
-    <a href="#" class="navbar-brand">
-        <img src="../../Images/Logo/logo.png" alt="Avatar logo" style="width: 120px; padding-left: 10px;">
-    </a>
-    <div class="container-fluid">
-        <ul class="navbar-nav" style="color: black; font-size: 18px;">
-            <li class="navbar-item ps-5 pe-3"><a href="#" class="nav-link">Giới thiệu</a></li>
-            <li class="navbar-item dropdown pe-3">
-                <a href="#" class="nav-link">Dịch vụ</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#" class="dropdown-item">Spa thú cưng</a></li>
-                    <li><a href="#" class="dropdown-item">Khám sức khỏe</a></li>
-                    <li><a href="#" class="dropdown-item">Khách sạn thú cưng</a></li>
-                </ul>
+    <div class="container">
+      <header
+        class="navbar navbar-expand-sm bg-light rounded-5"
+        style="box-shadow: 2px 2px 15px black"
+      >
+        <a href="#" class="navbar-brand">
+          <img
+            src="../../Images/Logo/logo.png"
+            alt="Avatar logo"
+            style="width: 120px; padding-left: 10px"
+          />
+        </a>
+        <div class="container-fluid">
+          <ul class="navbar-nav" style="color: black; font-size: 18px">
+            <li class="navbar-item ps-5 pe-3">
+              <a href="#" class="nav-link">Giới thiệu</a>
             </li>
-            <li class="navbar-item pe-3"><a href="#" class="nav-link">Sản phẩm</a></li>
-            <li class="navbar-item pe-3"><a href="#" class="nav-link">Thú cưng</a></li>
-            <li class="navbar-item pe-3"><a href="#" class="nav-link">Liên hệ</a></li>
-        </ul>
-        <form action="" class="d-flex">
-            <div class="input-group h-25" style="padding-top: 4px;">
-                <span class="input-group-text border-black" style="border-top-left-radius: 20px; border-bottom-left-radius: 20px;"><img src="/Images/Logo/Union.png" alt=""></span>
-                <input class="form-control border-black" type="text" name="" id="" style="width: 300px; margin-right: 80px; border-top-right-radius: 20px; border-bottom-right-radius: 20px;" placeholder="Tìm kiếm...">
+            <li class="navbar-item dropdown pe-3">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Dịch vụ</a
+              >
+              <ul class="navbar-item dropdown-menu">
+                <li><a href="#" class="dropdown-item">Spa thú cưng</a></li>
+                <li><a href="#" class="dropdown-item">Khám sức khỏe</a></li>
+                <li>
+                  <a href="#" class="dropdown-item">Khách sạn thú cưng</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar-item pe-3">
+              <a href="#" class="nav-link">Sản phẩm</a>
+            </li>
+            <li class="navbar-item pe-3">
+              <a href="#" class="nav-link">Thú cưng</a>
+            </li>
+            <li class="navbar-item pe-3">
+              <a href="#" class="nav-link">Liên hệ</a>
+            </li>
+          </ul>
+          <form action="" class="d-flex">
+            <div class="input-group h-25" style="padding-top: 4px">
+              <span
+                class="input-group-text border-black"
+                style="
+                  border-top-left-radius: 20px;
+                  border-bottom-left-radius: 20px;
+                  border-right: none;
+                "
+                ><img src="/Images/Logo/Union.png" alt=""
+              /></span>
+              <input
+                class="form-control border-black"
+                type="text"
+                name=""
+                id=""
+                style="
+                  width: 300px;
+                  margin-right: 80px;
+                  border-left: none;
+                  border-top-right-radius: 20px;
+                  border-bottom-right-radius: 20px;
+                "
+                placeholder="Tìm kiếm..."
+              />
             </div>
-            <a href=""><img src="../../Images/Logo/logo giỏ hàng.png" alt=""></a>
-            <a href=""><img src="../../Images/Logo/Logo tài khoản.png" alt=""></a>
-        </form>
-    </div>
-</header>`;
+            <a href=""
+              ><img src="../../Images/Logo/logo giỏ hàng.png" alt=""
+            /></a>
+            <a href=""
+              ><img src="../../Images/Logo/Logo tài khoản.png" alt=""
+            /></a>
+          </form>
+        </div>
+      </header>
+    </div>`;
 
     const headerMenu = document.getElementById("headerMenu");
     if (headerMenu) {
