@@ -9,7 +9,7 @@ function renderMenu() {
     <div class="container">
       <header
         class="navbar navbar-expand-sm bg-light rounded-5"
-        style="box-shadow: 2px 2px 15px black"
+        style="box-shadow: 2px 2px 15px black; height: 70px;"
       >
         <a href="#" class="navbar-brand">
           <img
