@@ -4,3 +4,143 @@
 body {
     font-family: "Poppins", sans-serif;
 }
+
+/* Common */
+a {
+    text-decoration: none;
+}
+/* Header */
+.header .navbar {
+    background-color: rgb(246, 246, 246);
+}
+.header .fixed {
+    position: fixed;
+    z-index: 1;
+    padding-top: 26px;
+    top: -26px;
+}
+.logo-img {
+    height: 80px;
+}
+.navbar-nav {
+    margin-left: 70px;
+}
+
+.navbar-nav .nav-item {
+    padding: 3px 12px;
+}
+.navbar-nav .nav-link {
+    font-size: 18px;
+    color: black;
+    font-weight: 400;
+}
+.navbar-nav .nav-link:hover {
+    text-shadow: 1px 0 0 currentColor;
+    transition-duration: 0.6s;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.input-group.search {
+    width: 400px;
+}
+.input-group-text {
+    margin-left: 50px;
+}
+.header-action {
+    display: flex;
+    gap: 15px;
+}
+.cart-icon {
+    margin-top: 2px;
+}
+.account-icon {
+    margin-top: 2px;
+    margin-left: 5px;
+}
+.hero {
+    margin-top: 85px;
+}
+.hero-img {
+    width: 100%;
+}
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+/* Introduce */
+.introduce {
+    margin-top: 75px;
+}
+.row.introduce-row {
+    display: flex;
+    align-items: center;
+}
+.col.introduce-content {
+    margin-left: 30px;
+    width: 45%;
+    flex-shrink: 0;
+    padding: 30px 15px;
+}
+.col.introduce-media {
+    flex-grow: 1;
+}
+.introduce-images {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.img-fluid.introduce-img {
+    width: 330px;
+    height: 540px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.introduce-img:first-child {
+    position: relative;
+    margin-right: -5px;
+    box-shadow: 10px 10px 8px rgb(71, 69, 69);
+}
+.introduce-img:last-child {
+    width: 250px;
+    height: 410px;
+    box-shadow: 10px 10px 8px rgb(71, 70, 70);
+}
+
+.introduce-content .introduce-heading {
+    text-align: center;
+}
+.introduce-content .introduce-subtitle {
+    color: #777;
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.introduce-info {
+    margin-top: 30px;
+}
+
+.introducce-desc {
+    color: #5e5c5c;
+    font-size: 16px;
+    line-height: 25px;
+}
+.button {
+    text-align: center;
+}
+.btn.btn-theme {
+    margin-top: 20px;
+    border: 1px solid black;
+    width: 150px;
+    font-weight: bold;
+    font-size: 15px;
+    height: 45px;
+}
+.btn.btn-theme:hover {
+    background-color: white;
+    color: black;
+    transition: 0.6s ease-in-out;
+}
