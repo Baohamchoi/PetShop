@@ -1,0 +1,123 @@
+/* 
+    Author: The Bao
+    Day: 22/03/2024
+*/
+* {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+:root {
+    --color-text-menuPets: white;
+    --color-box-menuPets: #928e8e;
+}
+
+.container-fluid {
+    margin-top: 28px;
+}
+
+.body-pets {
+    margin-bottom: 10px; 
+}
+
+.menu-left {
+    margin-top: 20px;
+    background-color: var(--color-box-menuPets);
+}
+
+.menu-pets {
+    width: 216px; /* Đặt chiều rộng của menu-pets là 100% */
+    position: relative;
+    right: 12px;
+}
+
+.menu-pets li a {
+    color: var(--color-text-menuPets);
+    display: block;
+}
+
+.menu-pets .nav-item {
+    width: 100%; /* Đặt chiều rộng của mỗi item trong menu là 100% */
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.menu-pets .nav-item:hover {
+    background-color: white;
+}
+
+.menu-pets .nav-item .nav-link:focus {
+    background-color: white; /* Thay đổi màu nền khi mục được chọn */
+    color: black; /* Thay đổi màu chữ khi mục được chọn */
+}
+
+/* click vào danh mục pet */
+.menu-pets li a:hover {
+    color: var(--color-text-menuPets);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu-pets li:hover > a{
+    color: var(--color-text-menuPets);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu-pets .nav-item a {
+    height: 60px;
+}
+
+.menu-left {
+    position: relative;
+    left: 12px;
+}
+
+/* Khung các loại pet (bên phải) */
+.menu-right .menu-choose {
+    width: 100%;
+    height: 80px;
+    margin-left: 10px;
+    background-color: var(--color-box-menuPets);
+}
+
+.menu-choose {
+    display: flex;
+    align-items: center;
+}
+
+.menu-choose ul {
+    margin-bottom: 0;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-choose li {
+    list-style: none;
+    display: flex;
+    margin-left: 30px;
+}
+
+.menu-choose button {
+    width: 100px;
+}
+
+/* Nút sắp xếp giá pets */
+.form-select:focus {
+    outline: none; /* tắt hiển thị viền ngoài khi select đang được focus */
+    box-shadow: none; /* tắt hiệu ứng box-shadow khi select đang được focus */
+  }
+
+.form-select option[disabled] {
+    color: transparent;
+  }
+
+  /* Nút chuyển các trang danh sách pets */
+  .transformPagePets {
+    padding-left: 120px;
+  }
