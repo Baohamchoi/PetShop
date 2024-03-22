@@ -110,6 +110,9 @@ a {
 
 .introduce-content .introduce-heading {
     text-align: center;
+    color: #0d1111;
+    font-size: 42px;
+    font-weight: 700;
 }
 .introduce-content .introduce-subtitle {
     color: #777;
@@ -143,4 +146,64 @@ a {
     background-color: white;
     color: black;
     transition: 0.6s ease-in-out;
+}
+/* Features */
+.features {
+    margin-top: 100px;
+    background-color: rgba(242, 242, 242, 0.908);
+    padding: 40px 0 150px;
+}
+.features .features-item {
+    position: relative;
+}
+.features .features-title {
+    color: #0d1111;
+    font-size: 42px;
+    font-weight: 700;
+}
+.features .features-desc {
+    color: #767e7e;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.78;
+    width: 525px;
+    margin-top: 20px;
+}
+.features .features-list {
+    margin-top: 50px;
+}
+.features .features-item:hover {
+    transform: translateY(-16px);
+}
+.features .features-item:hover .features-img {
+    box-shadow: 7px 7px 10px gray;
+}
+.features .features-item:hover .features-info {
+    box-shadow: 5px 5px 10px gray;
+}
+.features-item .features-img {
+    width: 100%;
+    height: 393px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.features .features-info {
+    background: white;
+    padding: 18px 30px 10px 25px;
+    width: 325px;
+    position: absolute;
+    top: 322px;
+    right: 17px;
+    left: 58px;
+    border-radius: 10px;
+    border: 0.5px solid rgb(228, 225, 225);
+}
+.features .features-subtitle {
+    font-size: 23px;
+    font-weight: 600;
+}
+.features-info .features-desc {
+    width: 95%;
+    font-size: 15px;
+    font-weight: 490;
 }
