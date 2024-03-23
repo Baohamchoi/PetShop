@@ -30,7 +30,9 @@
 .dropdown-menu .dropdown-item:hover {
     background-color: rgb(236, 236, 236);
 }
-
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
 .input-group.search {
     width: 400px;
 }
