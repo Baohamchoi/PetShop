@@ -9,7 +9,11 @@
 
 :root {
     --color-text-menuPets: white;
-    --color-box-menuPets: #928e8e;
+    --color-box-menuPets: rgb(46, 37, 37);
+}
+
+header {
+    height: 80px;
 }
 
 .container-fluid {
@@ -22,18 +26,22 @@
 
 .menu-left {
     margin-top: 20px;
-    background-color: var(--color-box-menuPets);
+    border: 1px solid black;
+    /* background-color: var(--color-box-menuPets); */
 }
 
 .menu-pets {
     width: 216px; /* Đặt chiều rộng của menu-pets là 100% */
     position: relative;
     right: 12px;
+    top: 20px;
 }
 
 .menu-pets li a {
-    color: var(--color-text-menuPets);
-    display: block;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-pets .nav-item {
@@ -41,6 +49,10 @@
     text-align: center;
     padding-left: 0;
     padding-right: 0;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-pets .nav-item:hover {
@@ -54,14 +66,14 @@
 
 /* click vào danh mục pet */
 .menu-pets li a:hover {
-    color: var(--color-text-menuPets);
+    color: black;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: bold;
 }
 
-.menu-pets li:hover > a{
-    color: var(--color-text-menuPets);
+.menu-pets li:hover {
+    color: black;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: bold;
@@ -81,6 +93,7 @@
     width: 100%;
     height: 80px;
     margin-left: 10px;
+
     background-color: var(--color-box-menuPets);
 }
 
@@ -108,7 +121,8 @@
 }
 
 /* Nút sắp xếp giá pets */
-.form-select:focus {
+.chooseCost:hover {
+    cursor: pointer;
     outline: none; /* tắt hiển thị viền ngoài khi select đang được focus */
     box-shadow: none; /* tắt hiệu ứng box-shadow khi select đang được focus */
   }
@@ -120,4 +134,52 @@
   /* Nút chuyển các trang danh sách pets */
   .transformPagePets {
     padding-left: 120px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Khung hiện pets */
+.productsView {
+    height: 530px;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: yellowgreen;
+}
+
+.transformPage {
+    height: 50px;
+    width: 100%;
+}
+  /* Dãy số trang */
+  .transformPage {
+    height: 50px;
+    margin-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .transformPage ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+  }
+  
+  .numPage {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    font-size: 26px;
+  }
+
+  .numPage:hover {
+    background-color: black;
+    color: white;
   }

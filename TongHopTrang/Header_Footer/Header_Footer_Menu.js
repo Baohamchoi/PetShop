@@ -4,86 +4,235 @@
 */
 
 function renderMenu() {
-    const menuString = `<link rel="stylesheet" href="../../Boostrap/bootstrap.min.css">
-    <script src="../../Boostrap/bootstrap.bundle.min.js"></script>
-    <div class="container">
-      <header
-        class="navbar navbar-expand-sm bg-light rounded-5"
-        style="box-shadow: 2px 2px 15px black; height: 70px;"
-      >
-        <a href="#" class="navbar-brand">
-          <img
-            src="../../Images/Logo/logo.png"
-            alt="Avatar logo"
-            style="width: 120px; padding-left: 10px"
-          />
-        </a>
-        <div class="container-fluid">
-          <ul class="navbar-nav" style="color: black; font-size: 18px">
-            <li class="navbar-item ps-5 pe-3">
-              <a href="#" class="nav-link">Giới thiệu</a>
-            </li>
-            <li class="navbar-item dropdown pe-3">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                >Dịch vụ</a
-              >
-              <ul class="navbar-item dropdown-menu">
-                <li><a href="#" class="dropdown-item">Spa thú cưng</a></li>
-                <li><a href="#" class="dropdown-item">Khám sức khỏe</a></li>
-                <li>
-                  <a href="#" class="dropdown-item">Khách sạn thú cưng</a>
-                </li>
-              </ul>
-            </li>
-            <li class="navbar-item pe-3">
-              <a href="#" class="nav-link">Sản phẩm</a>
-            </li>
-            <li class="navbar-item pe-3">
-              <a href="#" class="nav-link">Thú cưng</a>
-            </li>
-            <li class="navbar-item pe-3">
-              <a href="#" class="nav-link">Liên hệ</a>
-            </li>
-          </ul>
-          <form action="" class="d-flex">
-            <div class="input-group h-25" style="padding-top: 4px">
-              <span
-                class="input-group-text border-black"
-                style="
-                  border-top-left-radius: 20px;
-                  border-bottom-left-radius: 20px;
-                  border-right: none;
-                "
-                ><img src="/Images/Logo/Union.png" alt=""
-              /></span>
-              <input
-                class="form-control border-black"
-                type="text"
-                name=""
-                id=""
-                style="
-                  width: 300px;
-                  margin-right: 80px;
-                  border-left: none;
-                  border-top-right-radius: 20px;
-                  border-bottom-right-radius: 20px;
-                "
-                placeholder="Tìm kiếm..."
-              />
-            </div>
-            <a href=""
-              ><img src="../../Images/Logo/logo giỏ hàng.png" alt=""
-            /></a>
-            <a href=""
-              ><img src="../../Images/Logo/Logo tài khoản.png" alt=""
-            /></a>
-          </form>
-        </div>
-      </header>
-    </div>`;
+    const menuString = `<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>PETSHOP</title>
+            <!-- Favicon -->
+            <link
+                rel="apple-touch-icon"
+                sizes="57x57"
+                href="../Favicon/apple-icon-57x57.png"
+            />
+            <link
+                rel="apple-touch-icon"
+                sizes="60x60"
+                href="../Favicon/apple-icon-60x60.png"
+            />
+            <link
+                rel="apple-touch-icon"
+                sizes="72x72"
+                href="../Favicon/apple-icon-72x72.png"
+            />
+            <link
+                rel="apple-touch-icon"
+                sizes="76x76"
+                href="../Favicon/apple-icon-76x76.png"
+            />
+            <link
+                rel="apple-touch-icon"
+                sizes="114x114"
+                href="../Favicon/apple-icon-114x114.png"
+            />
+            <link
+                rel="apple-touch-icon"
+                sizes="120x120"
+                href="../Favicon/apple-icon-120x120.png"
+            />
+            <link
+                rel="apple-touch-icon"
+                sizes="144x144"
+                href="../Favicon/apple-icon-144x144.png"
+            />
+            <link
+                rel="apple-touch-icon"
+                sizes="152x152"
+                href="../Favicon/apple-icon-152x152.png"
+            />
+            <link
+                rel="apple-touch-icon"
+                sizes="180x180"
+                href="../Favicon/apple-icon-180x180.png"
+            />
+            <link
+                rel="icon"
+                type="image/png"
+                sizes="192x192"
+                href="../Favicon/android-icon-192x192.png"
+            />
+            <link
+                rel="icon"
+                type="image/png"
+                sizes="32x32"
+                href="../Favicon/favicon-32x32.png"
+            />
+            <link
+                rel="icon"
+                type="image/png"
+                sizes="96x96"
+                href="../Favicon/favicon-96x96.png"
+            />
+            <link
+                rel="icon"
+                type="image/png"
+                sizes="16x16"
+                href="../Favicon/favicon-16x16.png"
+            />
+            <link rel="manifest" href="../Favicon/manifest.json" />
+            <meta name="msapplication-TileColor" content="#ffffff" />
+            <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+            <meta name="theme-color" content="#ffffff" />
+    
+            <!-- Embed font -->
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link
+                href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+                rel="stylesheet"
+            />
+            <!-- CSS -->
+            <link rel="stylesheet" href="../CSS/navbar.css" />
+            <link rel="stylesheet" href="../Boostrap/bootstrap.min.css" />
+            <script src="../Boostrap/bootstrap.bundle.min.js"></script>
+        </head>
+        <body style="height: 10000000px">
+            <!-- Header -->
+            <header class="header">
+                <nav class="navbar navbar-expand-sm px-5 fixed-top pb-0">
+                    <div class="container">
+                        <a href="./home.html">
+                            <img
+                                src="../Images/Logo/Logo_2.png"
+                                alt=""
+                                class="logo-img"
+                            />
+                        </a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#idNav"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+    
+                        <div class="collapse navbar-collapse" id="idNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Giới Thiệu</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        href=""
+                                        class="nav-link dropdown-toggle"
+                                        data-bs-toggle="dropdown"
+                                        >Dịch Vụ</a
+                                    >
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item">
+                                            <a href="" class="nav-link"
+                                                >Khám Thú Y</a
+                                            >
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="" class="nav-link"
+                                                >Khách Sạn Cho Thú Cưng</a
+                                            >
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="" class="nav-link"
+                                                >Grooming - Cắt Tỉa</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        href=""
+                                        class="nav-link dropdown-toggle"
+                                        data-bs-toggle="dropdown"
+                                    >
+                                        Sản phẩm
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item">
+                                            <a href="" class="nav-link">Thức Ăn</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="" class="nav-link"
+                                                >Quần Áo & Phụ Kiện</a
+                                            >
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="" class="nav-link"
+                                                >Mỹ Phẩm & Làm Đẹp</a
+                                            >
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="" class="nav-link"
+                                                >Dụng Cụ Vệ Sinh</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pets.html" class="nav-link">Thú Cưng</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Liên Hệ</a>
+                                </li>
+                            </ul>
+                            <div class="input-group search">
+                                <span
+                                    class="input-group-text bg-white border-black"
+                                    style="
+                                        border-top-left-radius: 20px;
+                                        border-bottom-left-radius: 20px;
+                                        border-right: none;
+                                    "
+                                    ><img src="../Images/Logo/Union.png" alt=""
+                                /></span>
+                                <input
+                                    class="form-control border-black"
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    style="
+                                        margin-right: 60px;
+                                        border-left: none;
+                                        border-top-right-radius: 20px;
+                                        border-bottom-right-radius: 20px;
+                                        outline: none; /* tắt hiển thị viền ngoài khi select đang được focus */
+                                        box-shadow: none;
+                                    "
+                                    placeholder="Tìm kiếm..."
+                                />
+                            </div>
+                            <div class="header-action">
+                                <a href=""
+                                    ><img
+                                        src="../Images/Logo/logo giỏ hàng.png"
+                                        alt=""
+                                        class="cart-icon"
+                                /></a>
+                                <a href=""
+                                    ><img
+                                        src="../Images/Logo/Logo tài khoản.png"
+                                        alt=""
+                                        class="account-icon"
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                
+            </header>
+            <!-- Main -->
+           
+        </body>
+    </html>`;
 
     const headerMenu = document.getElementById("headerMenu");
     if (headerMenu) {
