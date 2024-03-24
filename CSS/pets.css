@@ -25,6 +25,7 @@ header {
 }
 
 .menu-left {
+    width: 216px;
     margin-top: 20px;
     border: 1px solid black;
     /* background-color: var(--color-box-menuPets); */
@@ -32,9 +33,6 @@ header {
 
 .menu-pets {
     width: 216px; /* Đặt chiều rộng của menu-pets là 100% */
-    position: relative;
-    right: 12px;
-    top: 20px;
 }
 
 .menu-pets li a {
@@ -47,9 +45,6 @@ header {
 .menu-pets .nav-item {
     width: 100%; /* Đặt chiều rộng của mỗi item trong menu là 100% */
     text-align: center;
-    padding-left: 0;
-    padding-right: 0;
-    border-bottom: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
