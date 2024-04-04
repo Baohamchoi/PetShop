@@ -7,9 +7,8 @@
     padding-top: 0;
 }
 
-:root {
-    --color-text-menuPets: white;
-    --color-box-menuPets: #928e8e;
+header {
+    height: 80px;
 }
 
 .container-fluid {
@@ -21,47 +20,54 @@
 }
 
 .menu-left {
+    width: 216px;
+    height: 640px;
     margin-top: 20px;
-    background-color: var(--color-box-menuPets);
+    border: 1px solid black;
+    /* background-color: var(--color-box-menuPets); */
 }
 
 .menu-pets {
     width: 216px; /* Đặt chiều rộng của menu-pets là 100% */
-    position: relative;
-    right: 12px;
+    margin-left: -13px;
 }
 
 .menu-pets li a {
-    color: var(--color-text-menuPets);
-    display: block;
+    border-top: 1px solid black;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-pets .nav-item {
     width: 100%; /* Đặt chiều rộng của mỗi item trong menu là 100% */
     text-align: center;
-    padding-left: 0;
-    padding-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-pets .nav-item:hover {
-    background-color: white;
+    background-color: black;
 }
 
 .menu-pets .nav-item .nav-link:focus {
     background-color: white; /* Thay đổi màu nền khi mục được chọn */
     color: black; /* Thay đổi màu chữ khi mục được chọn */
+    border-left: 1px solid black;
 }
 
 /* click vào danh mục pet */
 .menu-pets li a:hover {
-    color: var(--color-text-menuPets);
+    color: white;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: bold;
 }
 
-.menu-pets li:hover > a{
-    color: var(--color-text-menuPets);
+.menu-pets li:hover {
+    color: white;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: bold;
@@ -81,7 +87,8 @@
     width: 100%;
     height: 80px;
     margin-left: 10px;
-    background-color: var(--color-box-menuPets);
+
+    background-color: #464646;
 }
 
 .menu-choose {
@@ -108,7 +115,8 @@
 }
 
 /* Nút sắp xếp giá pets */
-.form-select:focus {
+.chooseCost:hover {
+    cursor: pointer;
     outline: none; /* tắt hiển thị viền ngoài khi select đang được focus */
     box-shadow: none; /* tắt hiệu ứng box-shadow khi select đang được focus */
   }
@@ -120,4 +128,54 @@
   /* Nút chuyển các trang danh sách pets */
   .transformPagePets {
     padding-left: 120px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Khung hiện pets */
+.productsView {
+    height: 530px;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: row;
+}
+
+.transformPage {
+    height: 50px;
+    width: 100%;
+}
+  /* Dãy số trang */
+  .transformPage {
+    height: 50px;
+    margin-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .transformPage ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+  }
+  
+  .numPage {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    font-size: 26px;
+  }
+
+  .numPage:hover {
+    background-color: black;
+    color: white;
   }
