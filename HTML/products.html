@@ -4,9 +4,14 @@
     <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!-- Font Awesome Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <!-- Boostrap -->
         <link rel="stylesheet" href="../Boostrap/bootstrap.min.css">
         <script src="../Boostrap/bootstrap.bundle.min.js"></script>
+        <!-- JQuery -->
+        <script src="../JQuery/jquery-3.7.1.min.js"></script>
         <link rel="stylesheet" href="../CSS/pets.css">
         <title>Products</title>
     </head>
@@ -34,11 +39,11 @@
                             <li class="nav-item"><a href="#pitbull" class="nav-link" data-bs-toggle="tab" id="">Đồ dùng cho mèo</a></li>
                             <li class="nav-item"><a href="#poodle" class="nav-link" data-bs-toggle="tab" id="">Balo đựng mèo</a></li>
                             <li class="nav-item"><a href="#phocSoc" class="nav-link" data-bs-toggle="tab" id="">Sữa tắm cho pet</a></li>
-                            <li class="nav-item"><a href="#pug" class="nav-link" data-bs-toggle="tab" id="">Lược chải lông chó, mèo</a></li>
-                            <li class="nav-item"><a href="#baTu" class="nav-link" data-bs-toggle="tab" id="">Bánh thưởng cho pet</a></li>
-                            <li class="nav-item"><a href="#meoAnh" class="nav-link" data-bs-toggle="tab" id="">Dây xích chó, mèo</a></li>
-                            <li class="nav-item"><a href="#ragDoll" class="nav-link" data-bs-toggle="tab" id="">Nệm cho pet</a></li>
-                            <li class="nav-item border-bottom-0"><a href="munchKin" class="nav-link" data-bs-toggle="tab" id="">Thức ăn chó, mèo</a></li>
+                            <li class="nav-item"><a href="#pug" class="nav-link" data-bs-toggle="tab" id="">Lược chải lông cho thú cưng</a></li>
+                            <li class="nav-item"><a href="#baTu" class="nav-link" data-bs-toggle="tab" id="">Bánh thưởng cho thú cưng</a></li>
+                            <li class="nav-item"><a href="#meoAnh" class="nav-link" data-bs-toggle="tab" id="">Dây xích cho thú cưng</a></li>
+                            <li class="nav-item"><a href="#ragDoll" class="nav-link" data-bs-toggle="tab" id="">Nệm cho thú cưng</a></li>
+                            <li class="nav-item border-bottom-0"><a href="munchKin" class="nav-link" data-bs-toggle="tab" id="">Thức ăn cho thú cưng</a></li>
                         </ul>
                     </div>
                     <div class="menu-right col-md-10">
@@ -72,7 +77,40 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="productsView"></div>
+                        <div class="productsView">
+                            <div class="row" id="pets">
+                                <!-- <div class="thumbnail border border-black" style="height: 250px; width: 180px;" id="pets">
+                                    <div style="display: flex; justify-content: center;">
+                                        <img src="../Images/Sản phẩm/Bánh thưởng cho chó vị khoai môn VEGEBRAND Orgo Dental Bites Milky Taro/banh-thuong-cho-cho-vi-khoai-mon-vegebrand-orgo-dental-bites-milky-taro.jpg" alt="" style="height: 130px; width: 170px; margin-top: 5px;">
+                                    </div>
+                                    <div class="review">
+                                        <div class="stars">
+                                            <svg width="10" height="10" viewBox="0 0 940.688 940.688">
+                                              <path d="M885.344,319.071l-258-3.8l-102.7-264.399c-19.8-48.801-88.899-48.801-108.6,0l-102.7,264.399l-258,3.8 c-53.4,3.101-75.1,70.2-33.7,103.9l209.2,181.4l-71.3,247.7c-14,50.899,41.1,92.899,86.5,65.899l224.3-122.7l224.3,122.601 c45.4,27,100.5-15,86.5-65.9l-71.3-247.7l209.2-181.399C960.443,389.172,938.744,322.071,885.344,319.071z" />
+                                            </svg>
+                                            <svg width="10" height="10" viewBox="0 0 940.688 940.688">
+                                              <path d="M885.344,319.071l-258-3.8l-102.7-264.399c-19.8-48.801-88.899-48.801-108.6,0l-102.7,264.399l-258,3.8 c-53.4,3.101-75.1,70.2-33.7,103.9l209.2,181.4l-71.3,247.7c-14,50.899,41.1,92.899,86.5,65.899l224.3-122.7l224.3,122.601 c45.4,27,100.5-15,86.5-65.9l-71.3-247.7l209.2-181.399C960.443,389.172,938.744,322.071,885.344,319.071z" />
+                                            </svg>
+                                            <svg width="10" height="10" viewBox="0 0 940.688 940.688">
+                                                <path d="M885.344,319.071l-258-3.8l-102.7-264.399c-19.8-48.801-88.899-48.801-108.6,0l-102.7,264.399l-258,3.8 c-53.4,3.101-75.1,70.2-33.7,103.9l209.2,181.4l-71.3,247.7c-14,50.899,41.1,92.899,86.5,65.899l224.3-122.7l224.3,122.601 c45.4,27,100.5-15,86.5-65.9l-71.3-247.7l209.2-181.399C960.443,389.172,938.744,322.071,885.344,319.071z" />
+                                            </svg>
+                                            <svg width="10" height="10" viewBox="0 0 940.688 940.688">
+                                                <path d="M885.344,319.071l-258-3.8l-102.7-264.399c-19.8-48.801-88.899-48.801-108.6,0l-102.7,264.399l-258,3.8 c-53.4,3.101-75.1,70.2-33.7,103.9l209.2,181.4l-71.3,247.7c-14,50.899,41.1,92.899,86.5,65.899l224.3-122.7l224.3,122.601 c45.4,27,100.5-15,86.5-65.9l-71.3-247.7l209.2-181.399C960.443,389.172,938.744,322.071,885.344,319.071z" />
+                                            </svg>
+                                            <svg width="10" height="10" viewBox="0 0 940.688 940.688">
+                                                <path d="M885.344,319.071l-258-3.8l-102.7-264.399c-19.8-48.801-88.899-48.801-108.6,0l-102.7,264.399l-258,3.8 c-53.4,3.101-75.1,70.2-33.7,103.9l209.2,181.4l-71.3,247.7c-14,50.899,41.1,92.899,86.5,65.899l224.3-122.7l224.3,122.601 c45.4,27,100.5-15,86.5-65.9l-71.3-247.7l209.2-181.399C960.443,389.172,938.744,322.071,885.344,319.071z" />
+                                            </svg>
+                                            <div class="overlay" style="width: 37%"></div>
+                                        </div>
+                                        <div class="reviewNum">(132)</div>
+                                    </div>
+                                        <h6 class="nameProduct">Bánh thưởng cho chó vị khoai môn VEGEBRAND Orgo Dental Bites Milky Taro</h6>
+                                        <h5 class="price text-success">Giá: 12000000đ</h5>
+                                        <button class="btn btn-success themGioHang">Thêm vào giỏ hàng</button>
+
+                                </div> -->
+                            </div>
+                        </div>
                         <div class="transformPage">
                             <ul>
                                 <li>
@@ -97,7 +135,9 @@
                 <footer id="footerMenu"></footer>
             </div>
         </div>
-         
+
         <script src="../TongHopTrang/Header_Footer/Header_Footer_Menu.js"></script>
+        <script type="module" src="../Database/readingData.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script> -->
     </body>
     </html>

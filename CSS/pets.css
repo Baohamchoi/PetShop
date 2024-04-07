@@ -5,6 +5,11 @@
 * {
     margin-top: 0;
     padding-top: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -138,10 +143,83 @@ header {
     width: 100%;
     margin-left: 10px;
     margin-top: 10px;
-    background-color: yellowgreen;
     display: flex;
     flex-direction: row;
 }
+
+.productsView .row {
+    margin-left: 1px;
+}
+
+.productsView h6 {
+    font-size: 11px;
+}
+
+.productsView .review {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Số sao đánh giá */
+.productsView .stars {
+    position: relative;
+    white-space: nowrap;
+    width: 50%;
+}
+
+.productsView .overlay {
+    background: #fff;
+    height: 100%;
+    overflow: hidden;
+    mix-blend-mode: color;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.productsView svg {
+    fill: gold;
+}
+
+.productsView .reviewNum {
+    font-size: 12px;
+    color: #666;
+}
+
+.productsView .row .caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productsView .price {
+    display: flex;
+    justify-content: center;
+}
+/*
+.productsView .themGioHang {
+    font-size: 14px;
+    transform: translateY(100%);
+    position: absolute;
+}
+
+
+
+.productsView h5 {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.productsView .price:active {
+    transform: translateX(110%);
+}
+
+
+
+.productsView .price:active + .themGioHang {
+    transform: translateX(0);
+    transform: translateY(-90%);
+} */
 
 .transformPage {
     height: 50px;
