@@ -121,36 +121,36 @@ function renderMenu() {
                         <div class="collapse navbar-collapse" id="idNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a href="" class="nav-link">Giới Thiệu</a>
+                                    <a href="" class="nav-link">Giới thiệu</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a
                                         href=""
                                         class="nav-link dropdown-toggle"
                                         data-bs-toggle="dropdown"
-                                        >Dịch Vụ</a
+                                        >Dịch vụ</a
                                     >
                                     <ul class="dropdown-menu">
                                         <li class="dropdown-item">
                                             <a href="" class="nav-link"
-                                                >Khám Thú Y</a
+                                                >Khám thú y</a
                                             >
                                         </li>
                                         <li class="dropdown-item">
                                             <a href="" class="nav-link"
-                                                >Khách Sạn Cho Thú Cưng</a
+                                                >Khách sạn cho thú cưng</a
                                             >
                                         </li>
                                         <li class="dropdown-item">
                                             <a href="" class="nav-link"
-                                                >Grooming - Cắt Tỉa</a
+                                                >Grooming - Cắt tỉa</a
                                             >
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a
-                                        href=""
+                                        href="../HTML/products.html"
                                         class="nav-link dropdown-toggle"
                                         data-bs-toggle="dropdown"
                                     >
@@ -158,30 +158,30 @@ function renderMenu() {
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="dropdown-item">
-                                            <a href="" class="nav-link">Thức Ăn</a>
+                                            <a href="" class="nav-link">Thức ăn</a>
                                         </li>
                                         <li class="dropdown-item">
                                             <a href="" class="nav-link"
-                                                >Quần Áo & Phụ Kiện</a
+                                                >Quần áo & Phụ kiện</a
                                             >
                                         </li>
                                         <li class="dropdown-item">
                                             <a href="" class="nav-link"
-                                                >Mỹ Phẩm & Làm Đẹp</a
+                                                >Mỹ phẩm</a
                                             >
                                         </li>
                                         <li class="dropdown-item">
                                             <a href="" class="nav-link"
-                                                >Dụng Cụ Vệ Sinh</a
+                                                >Dụng cụ vệ sinh</a
                                             >
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pets.html" class="nav-link">Thú Cưng</a>
+                                    <a href="pets.html" class="nav-link">Thú cưng</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" class="nav-link">Liên Hệ</a>
+                                    <a href="" class="nav-link">Liên hệ</a>
                                 </li>
                             </ul>
                             <div class="input-group search">
@@ -243,32 +243,118 @@ function renderMenu() {
 function renderFooter() {
     const footer = `<link rel="stylesheet" href="../../Boostrap/bootstrap.min.css">
     <script src="../../Boostrap/bootstrap.bundle.min.js"></script>
-    <nav class="navbar navbar-expand-sm justify-content-center" style="background-color: #FCE7AD;">
-    <div class="col-sm-12">
-        <div class="row-sm-12" style="display: flex; justify-content: center; font-size: 24px;">
-        <b>LIÊN HỆ HỖ TRỢ</b>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- Embed font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet"
+      />
+      <!-- CSS -->
+      <link rel="stylesheet" href="../CSS/footer.css" />
+      <link rel="stylesheet" href="../Boostrap/bootstrap.min.css" />
+      <script src="../Boostrap/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-row">
+                <div class="col footer-col">
+                    <a href="../HTML/home.html">
+                        <img
+                            src="../Images/Logo/Logo.png"
+                            alt=""
+                            class="logo"
+                        />
+                        <span class="logo-title">PET SHOP</span>
+                    </a>
+                </div>
+                <div class="col footer-col">
+                    <h3 class="footer-title">CHÍNH SÁCH DỊCH VỤ</h3>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="">Chính Sách Bảo Mật</a>
+                        </li>
+                        <li>
+                            <a href="">Chính Sách Đổi Trả Hàng</a>
+                        </li>
+                        <li>
+                            <a href="">Chính Sách Đưa Đón & Giao Hàng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col footer-col">
+                    <h3 class="footer-title">LIÊN HỆ CHÚNG TÔI</h3>
+                    <ul class="footer-list">
+                        <li>
+                            <a href=""
+                                >Địa Chỉ: 116 Đường 3 Tháng 2, Phường 12,
+                                Quận 10, TP.Hồ Chí Minh</a
+                            >
+                        </li>
+                        <li>
+                            <a href="">Hotline: 097430095</a>
+                        </li>
+                        <li>
+                            <a href="">Email: petshop@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col footer-col">
+                    <h3 class="footer-title">MẠNG XÃ HỘI</h3>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="" class="footer-social">
+                                <img
+                                    src="../Images/TrangChinh/Facebook.svg"
+                                    alt=""
+                                />
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-social">
+                                <img
+                                    src="../Images/TrangChinh/Instargram.svg"
+                                    alt=""
+                                />
+                                <span>Instargram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-social">
+                                <img
+                                    src="../Images/TrangChinh/Linked-in.svg"
+                                    alt=""
+                                />
+                                <span>Linked-in</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=" " class="footer-social">
+                                <img
+                                    src="../Images/TrangChinh/Twitter.svg"
+                                    alt=""
+                                />
+                                <span>Twitter</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright 2024 © PET SHOP © All rights reserved.</p>
+            </div>
         </div>
-        <div class="row-sm-12">
-            <ul class="navbar-nav" style="display: flex; justify-content: center;">
-                <li class="nav-item pe-5"><a href="" class="nav-link">
-                    <img src="/Images/Logo/whatsapp.png" alt=""><b> +8430041975</b></a>
-                </li>
-                <li class="nav-item pe-5"><a href="" class="nav-link">
-                    <img src="/Images/Logo/icons8-zalo-50 1.png" alt="">
-                    <b>Pet Shop</b>
-                </a></li>
-                <li class="nav-item pe-5"><a href="" class="nav-link">
-                    <img src="/Images/Logo/Vector.png" alt="">
-                    <b>Pet Shop</b>
-                </a></li>
-                <li class="nav-item"><a href="" class="nav-link">
-                    <img src="/Images/Logo/Group.png" alt="">
-                    <b>petshopvn@gmail.com</b>
-                </a></li>
-            </ul>
-        </div>
-    </div>
-</nav>`;
+    </footer>
+</body>
+</html>`;
 
     const footerMenu = document.getElementById("footerMenu");
     if (footerMenu) {

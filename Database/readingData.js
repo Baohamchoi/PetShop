@@ -24,7 +24,10 @@ const db = getFirestore(app);
 
 // Lấy collection PetData
 async function getDataProducts() {
-  const productCol = collection(db, "product_1");
+  // const numCollections = await getDocs(productCol).size; // Lấy số lượng collection trong db
+  // const numCollections = await getDocs(productCol).length; // Lấy số lượng document trong collection
+  
+  const productCol = collection(db, "product_2");
   let itemProducts = "";
   const querySnapshot = await getDocs(productCol);
   querySnapshot.forEach((doc) => {
@@ -32,6 +35,7 @@ async function getDataProducts() {
     itemProducts += renderProductCard(item.name, item.price, item.imgMain);
     console.log(doc.id, " => ", doc.data());
   });
+
   document.getElementById('pets').innerHTML = itemProducts;
 }
 
