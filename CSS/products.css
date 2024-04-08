@@ -24,74 +24,10 @@ header {
     margin-bottom: 10px; 
 }
 
-.menu-left {
-    width: 216px;
-    height: 640px;
-    margin-top: 20px;
-    border: 1px solid black;
-    /* background-color: var(--color-box-menuPets); */
-}
-
-.menu-pets {
-    width: 216px; /* Đặt chiều rộng của menu-pets là 100% */
-    margin-left: -13px;
-}
-
-.menu-pets li a {
-    border-top: 1px solid black;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu-pets .nav-item {
-    width: 100%; /* Đặt chiều rộng của mỗi item trong menu là 100% */
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu-pets .nav-item:hover {
-    background-color: black;
-}
-
-.menu-pets .nav-item .nav-link:focus {
-    background-color: white; /* Thay đổi màu nền khi mục được chọn */
-    color: black; /* Thay đổi màu chữ khi mục được chọn */
-    border-left: 1px solid black;
-}
-
-/* click vào danh mục pet */
-.menu-pets li a:hover {
-    color: white;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.menu-pets li:hover {
-    color: white;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.menu-pets .nav-item a {
-    height: 60px;
-}
-
-.menu-left {
-    position: relative;
-    left: 12px;
-}
-
 /* Khung các loại pet (bên phải) */
 .menu-right .menu-choose {
     width: 100%;
     height: 80px;
-    margin-left: 10px;
 
     background-color: #464646;
 }
@@ -130,9 +66,9 @@ header {
     color: transparent;
   }
 
-  /* Nút chuyển các trang danh sách pets */
+  /* Nút chuyển các trang danh sách pets */ 
   .transformPagePets {
-    padding-left: 120px;
+    padding-left: 200px;
     display: flex;
     align-items: center;
   }
@@ -152,8 +88,12 @@ header {
 }
 
 .productsView h6 {
-    font-size: 11px;
+    font-size: 14px;
     height: 50px;
+}
+
+.productsView h5 {
+    margin-top: 30px;
 }
 
 .productsView .review {
@@ -185,12 +125,6 @@ header {
 .productsView .reviewNum {
     font-size: 12px;
     color: #666;
-}
-
-.productsView .row .caption {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .productsView .price {

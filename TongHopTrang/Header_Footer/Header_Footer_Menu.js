@@ -121,7 +121,7 @@ function renderMenu() {
                 <div class="collapse navbar-collapse" id="idNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="../HTML/nav.html" class="nav-link"
+                            <a href="../HTML/home.html" class="nav-link"
                                 >GIỚI THIỆU</a
                             >
                         </li>
@@ -159,22 +159,22 @@ function renderMenu() {
                                 SẢN PHẨM
                             </a>
                             <ul class="dropdown-menu">
-                                <li class="dropdown-item">
+                                <li class="dropdown-item" name="thucAn">
                                     <a href="products.html" class="nav-link"
                                         >THỨC ĂN</a
                                     >
                                 </li>
-                                <li class="dropdown-item">
+                                <li class="dropdown-item" name="quanAo">
                                     <a href="" class="nav-link"
                                         >QUẦN ÁO & PHỤ KIỆN</a
                                     >
                                 </li>
-                                <li class="dropdown-item">
+                                <li class="dropdown-item" name="myPham">
                                     <a href="" class="nav-link"
                                         >MỸ PHẨM & LÀM ĐẸP</a
                                     >
                                 </li>
-                                <li class="dropdown-item">
+                                <li class="dropdown-item" name="dungCuVeSinh">
                                     <a href="" class="nav-link"
                                         >DỤNG CỤ VỆ SINH</a
                                     >
