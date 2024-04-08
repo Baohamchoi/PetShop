@@ -92,8 +92,10 @@ function renderMenu() {
                 href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
                 rel="stylesheet"
             />
+            <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
             <!-- CSS -->
             <link rel="stylesheet" href="../CSS/navbar.css" />
+            <link rel="stylesheet" href="../CSS/form.css">
             <link rel="stylesheet" href="../Boostrap/bootstrap.min.css" />
             <script src="../Boostrap/bootstrap.bundle.min.js"></script>
         </head>
@@ -122,7 +124,7 @@ function renderMenu() {
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a href="../HTML/home.html" class="nav-link"
-                                >GIỚI THIỆU</a
+                                >TRANG CHỦ</a
                             >
                         </li>
                         <li class="nav-item dropdown">
@@ -134,17 +136,17 @@ function renderMenu() {
                             >
                             <ul class="dropdown-menu">
                                 <li class="dropdown-item">
-                                    <a href="" class="nav-link"
+                                    <a href="../HTML/suckhoe.html" class="nav-link"
                                         >KHÁM THÚ Y</a
                                     >
                                 </li>
                                 <li class="dropdown-item">
-                                    <a href="" class="nav-link"
+                                    <a href="../HTML/khachsan.html" class="nav-link"
                                         >KHÁCH SẠN CHO THÚ CƯNG</a
                                     >
                                 </li>
                                 <li class="dropdown-item">
-                                    <a href="" class="nav-link"
+                                    <a href="../HTML/spa.html" class="nav-link"
                                         >GROOMING - CẮT TỈA</a
                                     >
                                 </li>
@@ -183,7 +185,7 @@ function renderMenu() {
                         </li>
 
                         <li class="nav-item">
-                            <a href="" class="nav-link">LIÊN HỆ</a>
+                            <a href="../HTML/lienhe.html" class="nav-link">LIÊN HỆ</a>
                         </li>
                     </ul>
                     <div class="input-group search">
@@ -219,7 +221,7 @@ function renderMenu() {
                                 alt=""
                                 class="cart-icon"
                         /></a>
-                        <a href=""
+                        <a href="" data-bs-toggle="modal" data-bs-target="#formModal"
                             ><img
                                 src="../Images/Logo/Logo tài khoản.png"
                                 alt=""
@@ -229,10 +231,69 @@ function renderMenu() {
                 </div>
             </div>
         </nav>
-                
+        <div class="modal fade modal-lg" id="formModal">
+        <div class="modal-dialog">
+          <div class="modal-content bg-transparent border-0 ">
+            <div class="modal-header border-0">
+             
+            </div>
+            <div class="modal-body ">
+              <div class="container-sign" id="container">
+                <div class="form-container sign-up">
+                    <form >
+                        <h1>Tạo tài khoản</h1>
+                        <div class="social-icons">
+                            <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <span>Hoặc sử dụng email của bạn để đăng ký</span>
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button>Đăng kí</button>
+                    </form>
+                </div>
+                <div class="form-container sign-in">
+                    <form >
+                        <h1>Đăng nhập</h1>
+                        <div class="social-icons">
+                            <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                      
+                        </div>
+                        <span>Hoặc sử dụng mật khẩu email của bạn</span>
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <a href="#">Quên mật khẩu</a>
+                        <button>Đăng nhập</button>
+                    </form>
+                </div>
+                <div class="toggle-container">
+                    <div class="toggle">
+                        <div class="toggle-panel toggle-left">
+                            <h1>Chào mừng bạn trở lại!</h1>
+                            <p>Nhập thông tin cá nhân của bạn để sử dụng tất cả các tính năng của trang web</p>
+                            <button class="hidden" id="login">Đăng nhập</button>
+                        </div>
+                        <div class="toggle-panel toggle-right">
+                            <h1>Chào bạn!</h1>
+                            <p>Đăng ký với thông tin cá nhân của bạn để sử dụng tất cả các tính năng của trang web</p>
+                            <button class="hidden" id="register">Đăng ký</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="modal-footer border-0">
+            </div>
+          </div>
+        </div>
+      </div> 
             </header>
             <!-- Main -->
-           
+             
         </body>
     </html>`;
 
