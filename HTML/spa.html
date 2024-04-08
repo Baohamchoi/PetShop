@@ -6,7 +6,34 @@
     <link rel="stylesheet" href="../../Boostrap/bootstrap.min.css">
     <script src="../../Boostrap/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../CSS/trangchu.css">
-    <title>Document</title>
+    <title>Grooming</title>
+    <style>
+        label {
+              font-weight: 600;
+          }
+
+          .table .form-control{
+              background-color: #f9f9f9;
+              border: none;
+              border-bottom: 1px solid black;
+              min-height: 40px;
+              padding: 10px 15px;
+              border-radius: 1px;
+              font-size: 15px;
+              opacity: 0.8;
+          
+          }
+          .table .btn {
+              border-radius: 1px;
+          }
+          .modal-header .close {
+              padding: 4px 8px;
+          }
+          .modal-body {
+          
+              padding: 0px 45px 20px 45px;
+}
+      </style>
 </head>
 <body>
   <header id="headerMenu"></header>
@@ -17,7 +44,7 @@
                     <div class="space-content-2">
                         <h3>Chúng tôi xem thú cưng của bạn như một thành viên trong gia đình.</h3>
                         <p>Chúng tôi cam kết cung cấp cho thú cưng của bạn môi trường an toàn, thoải mái và yêu thương. Đội ngũ chuyên gia của chúng tôi luôn sẵn lòng lắng nghe và hiểu rõ nhu cầu cũng như tình trạng sức khỏe của thú cưng, để có thể đảm bảo rằng chúng sẽ được chăm sóc tốt nhất có thể.</p>
-                        <button>Đặt hẹn</button>
+                        <button data-bs-toggle="modal" data-bs-target="#myModal">Đặt hẹn</button>
                     </div>
 
                 </div>
@@ -37,7 +64,7 @@
                     <div class="content-5-left">
                         <h2>Chăm sóc chuyên nghiệp cho tất cả các giống thú cưng</h2>
                         <p>Dù là chó, mèo, thú nhỏ hoặc lớn, chúng tôi có đội ngũ nhân viên được đào tạo chuyên sâu và có kinh nghiệm để cung cấp các dịch vụ chăm sóc tối ưu nhất.</p>
-                        <button>Đặt hẹn</button>
+                        <button data-bs-toggle="modal" data-bs-target="#myModal">Đặt hẹn</button>
                     </div>
                     <div class="content-5-right">
                         <ul>
@@ -96,6 +123,86 @@
             </div>
     </div>    
   </section>
+  <div id="myModal" class="modal fade modal-lg" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <div class="text-center w-100"> <h2 class="modal-title text-center">ĐẶT LỊCH HẸN</h2></div>
+                <button
+                        type="button"
+                        class="close"
+                        data-bs-dismiss="modal"
+                    >
+                        &times;
+                    </button>
+            </div>
+            <div class="modal-body">
+               
+                 <form action="" class="table" >
+              <div class="row">
+                <div class="col">
+                    <label for="">Họ và tên: </label>
+                </div>
+                <div class="col">
+                    <label for="">Email: </label>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col">
+                    <input
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Nhập họ và tên"
+                        class="form-control"
+                        style="outline: none; box-shadow: none;"
+                    
+                    />
+                </div>
+                <div class="col">
+                    <input
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Nhập địa chỉ Email"
+                        class="form-control"
+                        style="outline: none; box-shadow: none;"
+                    />
+                </div>
+            </div>
+            <div class="row mt-2"><label for="">Điện thoại: </label></div>
+            <div class="row mx-0 mt-2">
+                <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Nhập số điện thoại: "
+                    class="form-control"
+                    style="   outline: none;box-shadow: none;"
+                />
+            </div>
+            <div class="row mt-2"><label for="">Nội dung: </label></div>
+            <div class="row mx-0 mt-2">
+                <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Nội dung liên hệ"
+                    class="form-control"
+                    style="   outline: none;box-shadow: none;"
+                ></textarea>
+            </div>
+            <div class="row m-0 mt-4">
+                    <button class="btn btn-dark">GỬI LIÊN HỆ</button></a
+                >
+            </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>
   <footer id="footerMenu" class="mt-5"></footer>
   <script src="../TongHopTrang/Header_Footer/Header_Footer_Menu.js"></script>
   <script src="../JS/form_dangki.js"></script>

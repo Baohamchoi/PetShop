@@ -20,6 +20,33 @@
             rel="stylesheet"
         />
         <title>Khách sạn</title>
+        <style>
+          label {
+                font-weight: 600;
+            }
+
+            .table .form-control{
+                background-color: #f9f9f9;
+                border: none;
+                border-bottom: 1px solid black;
+                min-height: 40px;
+                padding: 10px 15px;
+                border-radius: 1px;
+                font-size: 15px;
+                opacity: 0.8;
+            
+            }
+            .table .btn {
+                border-radius: 1px;
+            }
+            .modal-header .close {
+                padding: 4px 8px;
+            }
+            .modal-body {
+            
+                padding: 0px 45px 20px 45px;
+}
+        </style>
     </head>
     <body>
         <header id="headerMenu"></header>
@@ -315,7 +342,7 @@
                         >
                             <div class="row">
                                 <p>Giá: <span>100k/ngày</span></p>
-                                <button class="w-75 btn btn-dark px-2 py-2">
+                                <button class="w-75 btn btn-dark px-2 py-2" data-bs-toggle="modal" data-bs-target="#myModal">
                                     Đặt lịch
                                 </button>
                             </div>
@@ -399,7 +426,7 @@
                         >
                             <div class="row">
                                 <p>Giá: <span>200k/ngày</span></p>
-                                <button class="w-75 btn btn-dark px-2 py-2">
+                                <button class="w-75 btn btn-dark px-2 py-2" data-bs-toggle="modal" data-bs-target="#myModal">
                                     Đặt lịch
                                 </button>
                             </div>
@@ -483,9 +510,10 @@
                         >
                             <div class="row">
                                 <p>Giá: <span>300K/ngày</span></p>
-                                <button class="w-75 btn btn-dark px-2 py-2">
+                                <button class="w-75 btn btn-dark px-2 py-2" data-bs-toggle="modal" data-bs-target="#myModal">
                                     Đặt lịch
                                 </button>
+
                             </div>
                         </div>
                     </div>
@@ -658,6 +686,86 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div id="myModal" class="modal fade modal-lg" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                        <div class="text-center w-100"> <h2 class="modal-title text-center">ĐẶT LỊCH HẸN</h2></div>
+                        <button
+                                type="button"
+                                class="close"
+                                data-bs-dismiss="modal"
+                            >
+                                &times;
+                            </button>
+                    </div>
+                    <div class="modal-body">
+                       
+                         <form action="" class="table" >
+                      <div class="row">
+                        <div class="col">
+                            <label for="">Họ và tên: </label>
+                        </div>
+                        <div class="col">
+                            <label for="">Email: </label>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col">
+                            <input
+                                type="text"
+                                name=""
+                                id=""
+                                placeholder="Nhập họ và tên"
+                                class="form-control"
+                                style="outline: none; box-shadow: none;"
+                            
+                            />
+                        </div>
+                        <div class="col">
+                            <input
+                                type="text"
+                                name=""
+                                id=""
+                                placeholder="Nhập địa chỉ Email"
+                                class="form-control"
+                                style="outline: none; box-shadow: none;"
+                            />
+                        </div>
+                    </div>
+                    <div class="row mt-2"><label for="">Điện thoại: </label></div>
+                    <div class="row mx-0 mt-2">
+                        <input
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="Nhập số điện thoại: "
+                            class="form-control"
+                            style="   outline: none;box-shadow: none;"
+                        />
+                    </div>
+                    <div class="row mt-2"><label for="">Nội dung: </label></div>
+                    <div class="row mx-0 mt-2">
+                        <textarea
+                            name=""
+                            id=""
+                            cols="30"
+                            rows="10"
+                            placeholder="Nội dung liên hệ"
+                            class="form-control"
+                            style="   outline: none;box-shadow: none;"
+                        ></textarea>
+                    </div>
+                    <div class="row m-0 mt-4">
+                            <button class="btn btn-dark">GỬI LIÊN HỆ</button></a
+                        >
+                    </div>
+                        </form>
+                    </div>
+                    
                 </div>
             </div>
         </div>
