@@ -217,12 +217,12 @@ function renderMenu() {
                                         alt=""
                                         class="cart-icon"
                                 /></a>
-                                
+                                <a id="formLogin" href=""></a>
                             </div>
                         </div>
                     </div>
                 </nav>
-                
+                script src="formLogin.js"></script>
             </header>
             <!-- Main -->
            
