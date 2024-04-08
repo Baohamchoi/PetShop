@@ -87,13 +87,29 @@ header {
     margin-left: 1px;
 }
 
+.productsView .row .frameImg {
+    display: flex; 
+    justify-content: center;
+}
+
+.productsView .row img {
+    margin-top: 4px;
+    height: 130px;
+    transition: transform 0.3s ease;
+}
+
+.productsView .row img:hover {
+    transform: scale(1.2);
+}
+
 .productsView h6 {
     font-size: 14px;
     height: 50px;
 }
 
 .productsView h5 {
-    margin-top: 30px;
+    margin-top: 34px;
+    text-align: center;
 }
 
 .productsView .review {
@@ -102,7 +118,7 @@ header {
 }
 
 /* Số sao đánh giá */
-.productsView .stars {
+/* .productsView .stars {
     position: relative;
     white-space: nowrap;
     width: 50%;
@@ -130,7 +146,8 @@ header {
 .productsView .price {
     display: flex;
     justify-content: center;
-}
+} */
+
 /*
 .productsView .themGioHang {
     font-size: 14px;
@@ -186,9 +203,4 @@ header {
     height: 50px;
     width: 50px;
     font-size: 26px;
-  }
-
-  .numPage:hover {
-    background-color: black;
-    color: white;
   }
