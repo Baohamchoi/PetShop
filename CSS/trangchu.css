@@ -1,0 +1,140 @@
+.content-top{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-top .img-background{
+    background: url(../../IMAGE/washing-pet-dog-home.png);
+    width: 50%;
+    height: 350px;
+    border-radius: 30%;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content-top p{
+    width: 50%;
+    text-align: center;
+    margin-top: 10px;
+}
+.content-top .text-special{
+    position: absolute;
+    bottom: 300px;
+}
+.content-top .text-special p h2{
+    font-size: 120px;
+}
+.content-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+.content-2-left{
+    width: 50%;
+}
+.content-2-left .space-content-2 h2{
+    font-size: 40px;
+}
+.content-2-left .space-content-2{
+    margin-left: 10rem;
+}
+.content-2-left .space-content-2 button{
+    padding: 7px 15px;
+    border-radius: 10px;
+
+}
+.content-2-left .space-content-2 button:hover{
+    background-color: black;
+    color: white;
+}
+.content-2-right{
+    width: 50%;
+}
+.content-2-right img{
+    float: right;
+    margin-right: 30px;
+}
+.content-5{
+    margin-top: 4rem;
+}
+.content-5-main{
+    display: flex;
+    justify-content: space-between;
+}
+.content-5-main .content-5-left{
+    width: 50%;
+    margin-left: 10rem;
+}
+.content-5-main .content-5-left button{
+    padding: 7px 15px;
+    border-radius: 10px;
+}
+.content-5-main .content-5-left button:hover{
+    background-color: black;
+    color: white;
+}
+.content-5-main .content-5-right{
+    width: 50%;
+    margin-left: 12rem;
+}
+.content-5-main .content-5-right ul{
+    list-style: none;
+}
+.content-6{
+    display: flex;
+    flex-direction: row;
+}
+.content-6 .content-6-left{
+    display: flex;
+    align-items: end;
+    width: 30%;
+}
+.content-6 .content-6-left img{
+    width: 60%;
+    margin-left: 10rem;
+}
+.content-6 .content-6-right{
+    width: 70%;
+}
+.content-6 .content-6-right img{
+    float: right;
+    width: 85%;
+    margin-right: 2rem;
+}
+.content-7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.content-7 img{
+    width: 15%;
+}
+.content-7 p{
+    width: 50%;
+    text-align: center;
+}
+.content-8{
+    display: flex;
+}
+.content-8 .content-8-left img{
+    width: 65%;
+    border-radius: 43%;
+    position: relative;
+    left: 4.2rem;
+}
+.content-8 .content-8-right{
+    margin-right: 4rem;
+}
+#ex{ // ID của thẻ h1
+    // CSS3 for all browser
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    }

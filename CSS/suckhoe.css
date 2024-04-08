@@ -1,0 +1,17 @@
+.row-hover{
+    background-color: #F4FAF8;
+}
+.row-hover:hover{
+    color: white;
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+}
+.row-hover:hover button{
+    background-color: white;
+    color: black;
+}
+.hover-sanpham{
+    transition: 1s;
+}
+.hover-sanpham:hover{
+    box-shadow: 2px 2px 5px black;
+}
