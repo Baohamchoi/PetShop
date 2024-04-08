@@ -93,7 +93,7 @@
         <link
             rel="stylesheet"
             href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        />       
+        />
         <script src="../Boostrap/bootstrap.bundle.min.js"></script>
     </head>
     <body>
@@ -182,7 +182,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="" class="nav-link">LIÊN HỆ</a>
+                                <a href="../HTML/lienhe.html" class="nav-link">LIÊN HỆ</a>
                             </li>
                         </ul>
                         <div class="input-group search">
@@ -513,7 +513,7 @@
                             </p>
                         </div>
                         <div class="col-3">
-                            <a href="" class="btn btn-dark cta-btn">Đặt Hẹn</a>
+                            <a href="" class="btn btn-dark cta-btn" data-bs-toggle="modal" data-bs-target="#myModal">Đặt Hẹn</a>
                         </div>
                     </div>
                 </div>
@@ -610,98 +610,84 @@
                 </div>
             </div>
         </footer>
-        <div class="modal fade modal-lg" id="formModal">
+        <!-- Modal lien he -->
+        <div id="myModal" class="modal fade modal-lg" role="dialog">
             <div class="modal-dialog">
-                <div class="modal-content bg-transparent border-0">
-                    <div class="modal-header border-0"></div>
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                        <div class="text-center w-100"> <h2 class="modal-title text-center">ĐẶT LỊCH HẸN</h2></div>
+                        <button
+                                type="button"
+                                class="close"
+                                data-bs-dismiss="modal"
+                            >
+                                &times;
+                            </button>
+                    </div>
                     <div class="modal-body">
-                        <div class="container-sign" id="container">
-                            <div class="form-container sign-up">
-                                <form>
-                                    <h1>Create Account</h1>
-                                    <div class="social-icons">
-                                        <a href="#" class="icon"
-                                            ><i
-                                                class="fa-brands fa-google-plus-g"
-                                            ></i
-                                        ></a>
-                                        <a href="#" class="icon"
-                                            ><i
-                                                class="fa-brands fa-facebook-f"
-                                            ></i
-                                        ></a>
-                                        <a href="#" class="icon"
-                                            ><i class="fa-brands fa-github"></i
-                                        ></a>
-                                    </div>
-                                    <span
-                                        >or use your email for
-                                        registeration</span
-                                    >
-                                    <input type="text" placeholder="Name" />
-                                    <input type="email" placeholder="Email" />
-                                    <input
-                                        type="password"
-                                        placeholder="Password"
-                                    />
-                                    <button>Sign Up</button>
-                                </form>
-                            </div>
-                            <div class="form-container sign-in">
-                                <form>
-                                    <h1>Sign in</h1>
-                                    <div class="social-icons">
-                                        <a href="#" class="icon"
-                                            ><i
-                                                class="fa-brands fa-google-plus-g"
-                                            ></i
-                                        ></a>
-                                        <a href="#" class="icon"
-                                            ><i
-                                                class="fa-brands fa-facebook-f"
-                                            ></i
-                                        ></a>
-                                        <a href="#" class="icon"
-                                            ><i class="fa-brands fa-github"></i
-                                        ></a>
-                                    </div>
-                                    <span>or use your email password</span>
-                                    <input type="email" placeholder="Email" />
-                                    <input
-                                        type="password"
-                                        placeholder="Password"
-                                    />
-                                    <a href="#">Forget Your Password</a>
-                                    <button>Sign In</button>
-                                </form>
-                            </div>
-                            <div class="toggle-container">
-                                <div class="toggle">
-                                    <div class="toggle-panel toggle-left">
-                                        <h1>Welcome Back!</h1>
-                                        <p>
-                                            Enter your personal details to use
-                                            all of site features
-                                        </p>
-                                        <button class="hidden" id="login">
-                                            Sign In
-                                        </button>
-                                    </div>
-                                    <div class="toggle-panel toggle-right">
-                                        <h1>Hello Friend!</h1>
-                                        <p>
-                                            Register with your pesonal details
-                                            to use all of site features
-                                        </p>
-                                        <button class="hidden" id="register">
-                                            Sign Up
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                       
+                         <form action="" class="table" >
+                      <div class="row">
+                        <div class="col">
+                            <label for="">Họ và tên: </label>
+                        </div>
+                        <div class="col">
+                            <label for="">Email: </label>
                         </div>
                     </div>
-                    <div class="modal-footer border-0"></div>
+                    <div class="row mt-2">
+                        <div class="col">
+                            <input
+                                type="text"
+                                name=""
+                                id=""
+                                placeholder="Nhập họ và tên"
+                                class="form-control"
+                                style="outline: none; box-shadow: none;"
+                            
+                            />
+                        </div>
+                        <div class="col">
+                            <input
+                                type="text"
+                                name=""
+                                id=""
+                                placeholder="Nhập địa chỉ Email"
+                                class="form-control"
+                                style="outline: none; box-shadow: none;"
+                            />
+                        </div>
+                    </div>
+                    <div class="row mt-2"><label for="">Điện thoại: </label></div>
+                    <div class="row mx-0 mt-2">
+                        <input
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="Nhập số điện thoại: "
+                            class="form-control"
+                            style="   outline: none;box-shadow: none;"
+                        />
+                    </div>
+                    <div class="row mt-2"><label for="">Nội dung: </label></div>
+                    <div class="row mx-0 mt-2">
+                        <textarea
+                            name=""
+                            id=""
+                            cols="30"
+                            rows="10"
+                            placeholder="Nội dung liên hệ"
+                            class="form-control"
+                            style="   outline: none;box-shadow: none;"
+                        ></textarea>
+                    </div>
+                    <div class="row m-0 mt-4">
+                            <button class="btn btn-dark">GỬI LIÊN HỆ</button></a
+                        >
+                    </div>
+                        </form>
+                    </div>
+                    
                 </div>
             </div>
         </div>
