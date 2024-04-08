@@ -26,8 +26,10 @@ const db = getFirestore(app);
 async function getDataProducts() {
   // const numCollections = await getDocs(productCol).size; // Lấy số lượng collection trong db
   // const numCollections = await getDocs(productCol).length; // Lấy số lượng document trong collection
+
   
-  const productCol = collection(db, "product_2");
+
+  const productCol = collection(db, "product_1");
   let itemProducts = "";
   const querySnapshot = await getDocs(productCol);
   querySnapshot.forEach((doc) => {

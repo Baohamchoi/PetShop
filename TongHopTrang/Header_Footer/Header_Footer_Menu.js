@@ -217,12 +217,7 @@ function renderMenu() {
                                         alt=""
                                         class="cart-icon"
                                 /></a>
-                                <a href=""
-                                    ><img
-                                        src="../Images/Logo/Logo tài khoản.png"
-                                        alt=""
-                                        class="account-icon"
-                                /></a>
+                                
                             </div>
                         </div>
                     </div>

@@ -153,6 +153,7 @@ header {
 
 .productsView h6 {
     font-size: 11px;
+    height: 50px;
 }
 
 .productsView .review {
