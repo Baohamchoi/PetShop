@@ -103,7 +103,7 @@ header {
 }
 
 .productsView h6 {
-    font-size: 14px;
+    font-size: 12px;
     height: 50px;
 }
 
@@ -112,10 +112,38 @@ header {
     text-align: center;
 }
 
-.productsView .review {
-    display: flex;
-    flex-direction: row;
+.productsView .row button {
+    font-size: 14px;
+    width: 160px;
+    height: 32px;
 }
+
+/* khi hover vào thì nút button di chuyển lên trên và giá tiền di chuyển xuống dưới sau đó giá tiền ẩn đi và button hiện lên */
+.thumbnail {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .price {
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .themGioHang {
+    position: absolute;
+    bottom: -60px; /* Ẩn nút khi không hover */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .thumbnail:hover .price {
+    transform: translateY(30px); /* Di chuyển giá tiền xuống */
+    opacity: 0; /* Ẩn giá tiền */
+  }
+  
+  .thumbnail:hover .themGioHang {
+    bottom: 10px; /* Hiện nút khi hover */
+  }
 
 /* Số sao đánh giá */
 /* .productsView .stars {

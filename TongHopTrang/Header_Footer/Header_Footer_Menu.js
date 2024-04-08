@@ -161,25 +161,17 @@ function renderMenu() {
                                 SẢN PHẨM
                             </a>
                             <ul class="dropdown-menu">
-                                <li class="dropdown-item" name="thucAn">
-                                    <a href="foodProduct.html" class="nav-link"
-                                        >THỨC ĂN</a
-                                    >
+                                <li class="dropdown-item" id="food">
+                                    THỨC ĂN
                                 </li>
-                                <li class="dropdown-item" name="quanAo">
-                                    <a href="clothesProduct.html" class="nav-link"
-                                        >QUẦN ÁO & PHỤ KIỆN</a
-                                    >
+                                <li class="dropdown-item" id="clothes">
+                                    QUẦN ÁO & PHỤ KIỆN
                                 </li>
-                                <li class="dropdown-item" name="myPham">
-                                    <a href="cosmeticProduct.html" class="nav-link"
-                                        >MỸ PHẨM & LÀM ĐẸP</a
-                                    >
+                                <li class="dropdown-item" id="cosmetic">
+                                    MỸ PHẨM & LÀM ĐẸP
                                 </li>
-                                <li class="dropdown-item" name="dungCuVeSinh">
-                                    <a href="cleaningProduct.html" class="nav-link"
-                                        >DỤNG CỤ VỆ SINH</a
-                                    >
+                                <li class="dropdown-item" id="cleaning">
+                                    DỤNG CỤ VỆ SINH
                                 </li>
                             </ul>
                         </li>
@@ -295,6 +287,7 @@ function renderMenu() {
             <!-- Main -->
              
         </body>
+        <script type="module" src="../Database/readingDataProducts.js"></script>
     </html>`;
 
     const headerMenu = document.getElementById("headerMenu");
