@@ -100,128 +100,135 @@ function renderMenu() {
         <body style="height: 10000000px">
             <!-- Header -->
             <header class="header">
-                <nav class="navbar navbar-expand-sm px-5 fixed-top pb-0">
-                    <div class="container">
-                        <a href="./home.html">
-                            <img
-                                src="../Images/Logo/Logo_2.png"
-                                alt=""
-                                class="logo-img"
-                            />
-                        </a>
-                        <button
-                            class="navbar-toggler"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#idNav"
-                        >
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-    
-                        <div class="collapse navbar-collapse" id="idNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">Giới thiệu</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a
-                                        href=""
-                                        class="nav-link dropdown-toggle"
-                                        data-bs-toggle="dropdown"
-                                        >Dịch vụ</a
+            <nav class="navbar navbar-expand-sm px-5 fixed-top pb-0">
+            <div class="container">
+                <a href="./home.html">
+                    <img
+                        src="../Images/Logo/Logo_2.png"
+                        alt=""
+                        class="logo-img"
+                    />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#idNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="idNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="../HTML/nav.html" class="nav-link"
+                                >GIỚI THIỆU</a
+                            >
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                href=""
+                                class="nav-link dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                >DỊCH VỤ</a
+                            >
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="" class="nav-link"
+                                        >KHÁM THÚ Y</a
                                     >
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-item">
-                                            <a href="" class="nav-link"
-                                                >Khám thú y</a
-                                            >
-                                        </li>
-                                        <li class="dropdown-item">
-                                            <a href="" class="nav-link"
-                                                >Khách sạn cho thú cưng</a
-                                            >
-                                        </li>
-                                        <li class="dropdown-item">
-                                            <a href="" class="nav-link"
-                                                >Grooming - Cắt tỉa</a
-                                            >
-                                        </li>
-                                    </ul>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a
-                                        href="../HTML/products.html"
-                                        class="nav-link dropdown-toggle"
-                                        data-bs-toggle="dropdown"
+                                <li class="dropdown-item">
+                                    <a href="" class="nav-link"
+                                        >KHÁCH SẠN CHO THÚ CƯNG</a
                                     >
-                                        Sản phẩm
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-item">
-                                            <a href="" class="nav-link">Thức ăn</a>
-                                        </li>
-                                        <li class="dropdown-item">
-                                            <a href="" class="nav-link"
-                                                >Quần áo & Phụ kiện</a
-                                            >
-                                        </li>
-                                        <li class="dropdown-item">
-                                            <a href="" class="nav-link"
-                                                >Mỹ phẩm</a
-                                            >
-                                        </li>
-                                        <li class="dropdown-item">
-                                            <a href="" class="nav-link"
-                                                >Dụng cụ vệ sinh</a
-                                            >
-                                        </li>
-                                    </ul>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="pets.html" class="nav-link">Thú cưng</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">Liên hệ</a>
+                                <li class="dropdown-item">
+                                    <a href="" class="nav-link"
+                                        >GROOMING - CẮT TỈA</a
+                                    >
                                 </li>
                             </ul>
-                            <div class="input-group search">
-                                <span
-                                    class="input-group-text bg-white border-black"
-                                    style="
-                                        border-top-left-radius: 20px;
-                                        border-bottom-left-radius: 20px;
-                                        border-right: none;
-                                    "
-                                    ><img src="../Images/Logo/Union.png" alt=""
-                                /></span>
-                                <input
-                                    class="form-control border-black"
-                                    type="text"
-                                    name=""
-                                    id=""
-                                    style="
-                                        margin-right: 60px;
-                                        border-left: none;
-                                        border-top-right-radius: 20px;
-                                        border-bottom-right-radius: 20px;
-                                        outline: none; /* tắt hiển thị viền ngoài khi select đang được focus */
-                                        box-shadow: none;
-                                    "
-                                    placeholder="Tìm kiếm..."
-                                />
-                            </div>
-                            <div class="header-action">
-                                <a href=""
-                                    ><img
-                                        src="../Images/Logo/logo giỏ hàng.png"
-                                        alt=""
-                                        class="cart-icon"
-                                /></a>
-                                
-                            </div>
-                        </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                href=""
+                                class="nav-link dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                            >
+                                SẢN PHẨM
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="products.html" class="nav-link"
+                                        >THỨC ĂN</a
+                                    >
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" class="nav-link"
+                                        >QUẦN ÁO & PHỤ KIỆN</a
+                                    >
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" class="nav-link"
+                                        >MỸ PHẨM & LÀM ĐẸP</a
+                                    >
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" class="nav-link"
+                                        >DỤNG CỤ VỆ SINH</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                    <div class="input-group search">
+                        <span
+                            class="input-group-text bg-white border-black"
+                            style="
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                                border-right: none;
+                            "
+                            ><img src="../Images/Logo/Union.png" alt=""
+                        /></span>
+                        <input
+                            class="form-control border-black"
+                            type="text"
+                            name=""
+                            id=""
+                            style="
+                                margin-right: 60px;
+                                border-left: none;
+                                border-top-right-radius: 20px;
+                                border-bottom-right-radius: 20px;
+                                outline: none;
+                                box-shadow: none;
+                            "
+                            placeholder="Tìm kiếm..."
+                        />
                     </div>
-                </nav>
+                    <div class="header-action">
+                        <a href=""
+                            ><img
+                                src="../Images/Logo/logo giỏ hàng.png"
+                                alt=""
+                                class="cart-icon"
+                        /></a>
+                        <a href=""
+                            ><img
+                                src="../Images/Logo/Logo tài khoản.png"
+                                alt=""
+                                class="account-icon"
+                        /></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
                 
             </header>
             <!-- Main -->

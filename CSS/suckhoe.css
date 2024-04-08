@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+
 .row-hover{
     background-color: #F4FAF8;
 }
