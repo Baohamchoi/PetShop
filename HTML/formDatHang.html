@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="../CSS/formDatHang.css">
         <title>Đặt hàng</title>
     </head>
-    <header id="productsMenu"></header>
+    <header id="headerMenu"></header>
     <body>
         <!-- Embed font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,61 +35,49 @@
                         <input
                             type="text"
                             name=""
-                            id=""
+                            id="hoten"
                             class="form-control"
                             placeholder=""
-                            aria-describedby="helpId"
+                            aria-describedby=""
                         />
-                        <small id="helpId" class="text-muted">Help text</small>
+                        <small id="errHoTen" class="text-danger"></small>
                     </div>
                     <div class="col-4 mb-2">
-                        <label for="" class="form-label">Số điện thoại:</label>
+                        <label for="" class="form-label" id="">Số điện thoại:</label>
                         <input
                             type="text"
                             name=""
-                            id=""
+                            id="sdt"
                             class="form-control"
                             placeholder=""
                             aria-describedby="helpId"
                         />
-                        <small id="helpId" class="text-muted">Help text</small>
+                        <small id="errSDT" class="text-danger"></small>
                     </div>
                 </div>
                 <div class="mb-2">
-                    <label for="" class="form-label">Địa chỉ:</label>
+                    <label for="" class="form-label" id="">Địa chỉ:</label>
                     <input
                         type="text"
                         name=""
-                        id=""
+                        id="diaChi"
                         class="form-control"
                         placeholder=""
                         aria-describedby="helpId"
                     />
-                    <small id="helpId" class="text-muted">Help text</small>
+                    <small id="errDC" class="text-danger"></small>
                 </div>
                 <div class="mb-2">
-                    <label for="" class="form-label">Email:</label>
+                    <label for="" class="form-label" id="">Email:</label>
                     <input
                         type="text"
                         name=""
-                        id=""
+                        id="email"
                         class="form-control"
                         placeholder=""
                         aria-describedby="helpId"
                     />
-                    <small id="helpId" class="text-muted">Help text</small>
-                </div>
-                <div class="row mb-2">
-                    <label for="" class="col-3">Ngày giao hàng:</label>
-                    <input
-                        type="date"
-                        name=""
-                        id=""
-                        class="col-3 ngayGiaoHang"
-                        placeholder=""
-                        aria-describedby="helpId"
-                    />
-                    <small id="helpId" class="col-4 text-muted mt-1">Help text</small>
+                    <small id="errEmail" class="text-danger"></small>
                 </div>
                 <div class="mb-2">
                     <label for="" class="form-label">Ghi chú:</label>
@@ -113,31 +101,31 @@
                 <label for=""><h3>Thông tin đơn hàng</h3></label>
                 <div class="cardProduct d-flex flex-row mt-5">
                     <div class="">
-                        <img src="../Images/Sản phẩm/Bánh thưởng cho chó vị khoai môn VEGEBRAND Orgo Dental Bites Milky Taro/banh-thuong-cho-cho-vi-khoai-mon-vegebrand-orgo-dental-bites-milky-taro.jpg" alt="" >
+                        <img src="" alt="" id="img">
                     </div>
                     <div class="product ms-3">
                         <label for="">Tên sản phẩm</label>
-                        <p>Bánh thưởng cho chó vị khoai môn VEGEBRAND Orgo Dental Bites Milky Taro</p>
+                        <p id="name"></p>
                     </div>
                     <div class="amount ms-3">
                         <label for="">Số lượng</label>
-                        <p class="d-flex justify-content-center">1</p>
+                        <p class="d-flex justify-content-center" id="amount"></p>
                     </div>
                     <div class="price ms-5">
                         <label for="" class="d-flex justify-content-center">Giá</label>
-                        <p>120.000đ</p>
+                        <p id="price"></p>
                     </div>
                 </div>
                 <div class="tongTienContain border-top d-flex flex-row justify-content-center">
                     <label for="" class="txtTongTien mt-3">Tổng tiền:</label>
-                    <p class="mt-3 ms-4">120.000đ</p>
+                    <p class="mt-3 ms-4" id="total"></p>
                 </div>
                 <div class="d-flex justify-content-center mt-4">
-                    <button class="btn btn-success">Đặt hàng</button>
+                    <button class="btn btn-success" id="datHang">Đặt hàng</button>
                 </div>
             </form>
         </div>
-        <label for="" class="w-100 text-danger d-flex justify-content-center">TRỞ VỀ GIỎ HÀNG</label>
+        <label for="" class="backToCart w-100 d-flex justify-content-center"><a class="text-danger" href="cart.html">TRỞ VỀ GIỎ HÀNG</a></label>
     </body>
         <footer id="footerMenu"></footer>
         <script src="../TongHopTrang/Header_Footer/Header_Footer_Menu.js"></script>

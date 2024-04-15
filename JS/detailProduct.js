@@ -84,4 +84,19 @@ $(document).ready(function() {
     }
   });
     
+  $('#datMuaNgay').on('click', function() {
+    var name = $('#name').text();
+    var img = $('#img').attr('src');
+    var price = $('#price').text();
+    var state = $('#state').text();
+    var brand = $('#brand').text();
+    var amount = $('#amountNum').val();
+
+    localStorage.setItem('name', name);
+    localStorage.setItem('img', img);
+    localStorage.setItem('price', price);
+    localStorage.setItem('amount', amount);
+    
+    window.location.href = 'formDatHang.html';
+  })
 });
