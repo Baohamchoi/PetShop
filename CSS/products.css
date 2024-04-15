@@ -73,7 +73,7 @@ header {
     align-items: center;
   }
 
-  /* Khung hiện pets */
+  /* Khung hiện sản phẩm */
 .productsView {
     height: 530px;
     width: 100%;
@@ -122,6 +122,7 @@ header {
 .thumbnail {
     position: relative;
     overflow: hidden;
+    cursor: pointer;
   }
   
   .price {
@@ -144,62 +145,6 @@ header {
   .thumbnail:hover .themGioHang {
     bottom: 10px; /* Hiện nút khi hover */
   }
-
-/* Số sao đánh giá */
-/* .productsView .stars {
-    position: relative;
-    white-space: nowrap;
-    width: 50%;
-}
-
-.productsView .overlay {
-    background: #fff;
-    height: 100%;
-    overflow: hidden;
-    mix-blend-mode: color;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.productsView svg {
-    fill: gold;
-}
-
-.productsView .reviewNum {
-    font-size: 12px;
-    color: #666;
-}
-
-.productsView .price {
-    display: flex;
-    justify-content: center;
-} */
-
-/*
-.productsView .themGioHang {
-    font-size: 14px;
-    transform: translateY(100%);
-    position: absolute;
-}
-
-
-
-.productsView h5 {
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.productsView .price:active {
-    transform: translateX(110%);
-}
-
-
-
-.productsView .price:active + .themGioHang {
-    transform: translateX(0);
-    transform: translateY(-90%);
-} */
 
 .transformPage {
     height: 50px;

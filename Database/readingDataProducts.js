@@ -164,6 +164,11 @@ $(document).ready(function() {
     }
 
     // chuyển qua trang chi tiết sản phẩm
-    window.location.href = 'DetailProduct.html';
+    if ($(clickedElement).hasClass('themGioHang')) {
+      // nếu ấn vô đây thì không có chuyển trang
+      
+    } else {
+      window.location.href = 'DetailProduct.html';
+    }
   });
 });

@@ -25,6 +25,42 @@
     <header id="headerMenu"></header>
     <!-- Body -->
     <div class="container">
+        <div class="container-fluid d-flex flex-column">
+            <div class="title-contain bg-secondary d-flex flex-row ps-5 align-items-center">
+                <div class="square"></div>
+                <label class="ms-2">Sản phẩm</label>
+                <label for="" class="lb-donGia">Đơn giá</label>
+                <label for="" class="lb-soLuong">Số lượng</label>
+                <label for="" class="lb-soTien">Số tiền</label>
+                <label for="" class="lb-thaoTac">Thao tác</label>
+            </div>
+            <div class="products-contain bg-secondary d-flex flex-column mt-4">
+                <div class="product d-flex flex-row align-items-center ps-5">
+                    <div class="square sp1"></div>
+                    <img src="../Images/Sản phẩm/Bánh thưởng cho chó vị khoai môn VEGEBRAND Orgo Dental Bites Milky Taro/banh-thuong-cho-cho-vi-khoai-mon-vegebrand-orgo-dental-bites-milky-taro.jpg" alt="" class="img ms-2">
+                    <label for="" class="name ms-4">Xương cho chó vị thịt bò VEGEBRAND Orgo Nutrients Beef</label>
+                    <select name="" id="" class="phanLoaiSelect">
+                        <option value="0">Phân loại hàng</option>
+                        <option value="">400 (gr)</option>
+                        <option value="">1 (kg)</option>
+                        <option value="">2 (kg)</option>
+                        <option value="">10 (kg)</option>
+                    </select>
+                    <label for="" class="donGia text-light">120.000 VND</label>
+                    <div>
+                        <div class="amountCo d-flex flex-row justify-content-center align-items-center bg-light">
+                            <img class="me-2" src="../Images/Logo/minus.png" alt="" id="removeAmount">
+                            <input type="text" value="0" id="amountNum" class="">
+                            <img class="ms-2" src="../Images/Logo/plus.png" alt="" id="addAmount">
+                        </div>
+                    </div>
+                    <label for="" class="soTien text-light">120.000 VND</label>
+                    <div>
+                        <button class="delete text-light btn btn-danger">Xóa</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         
     </div>
     <script src="../TongHopTrang/Header_Footer/Header_Footer_Menu.js"></script>
