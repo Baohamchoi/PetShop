@@ -24,7 +24,7 @@ async function getDataFood() {
   const querySnapshot = await getDocs(foodCol);
   querySnapshot.forEach((doc) => {
     const item = doc.data();
-    productItems += renderProductCard(item.name, item.price, item.imgMain);
+    productItems += renderProductCard(item.name, item.price, item.imgMain, item.brand, item.state);
     console.log(productItems);
     document.getElementById('products-container').innerHTML = productItems;
   });
@@ -37,7 +37,7 @@ async function getDataCleaning() {
   const querySnapshot = await getDocs(foodCol);
   querySnapshot.forEach((doc) => {
     const item = doc.data();
-    productItems += renderProductCard(item.name, item.price, item.imgMain);
+    productItems += renderProductCard(item.name, item.price, item.imgMain, item.brand, item.state);
     document.getElementById('products-container').innerHTML = productItems;
   });
 }
@@ -49,7 +49,7 @@ async function getDataCosmetic() {
   const querySnapshot = await getDocs(foodCol);
   querySnapshot.forEach((doc) => {
     const item = doc.data();
-    productItems += renderProductCard(item.name, item.price, item.imgMain);
+    productItems += renderProductCard(item.name, item.price, item.imgMain, item.brand, item.state);
     document.getElementById('products-container').innerHTML = productItems;
   });
 }
@@ -61,27 +61,30 @@ async function getDataClothes() {
   const querySnapshot = await getDocs(foodCol);
   querySnapshot.forEach((doc) => {
     const item = doc.data();
-    productItems += renderProductCard(item.name, item.price, item.imgMain);
+    productItems += renderProductCard(item.name, item.price, item.imgMain, item.brand, item.state);
     document.getElementById('products-container').innerHTML = productItems;
   });
 }
 
 // Hàm renderFoodCard
-function renderProductCard(name, price, imgMain) {
+function renderProductCard(name, price, imgMain, brand, state) {
   return `<div class="thumbnail border border-black" style="height: 250px; width: 180px; margin-right: 32px" id="pets">
             <div class="frameImg">
-                <img class="lazy" src="${imgMain}">
+                <img class="lazy" id="imgMain" src="${imgMain}">
             </div>
-            <h6 class="nameProduct">${name}</h6>
-                <h5 class="price text-danger">${price}</h5>
-                <button class="btn btn-success themGioHang">Thêm vào giỏ hàng</button>
+            <h6 class="nameProduct" id="name">${name}</h6>
+            <h5 id="price" class="price text-danger">${price}</h5>
+            <button class="btn btn-success themGioHang">Thêm vào giỏ hàng</button>
+            <h5 class="brand" id="brand" hidden>${brand}</h5>
+            <p id="state" hidden>${state}</p>
           </div>`;
 }
-
+// const all = document.querySelector('#all');
 const food = document.querySelector('#food');
 const clothes = document.querySelector('#clothes');
 const cleaning = document.querySelector('#cleaning');
 const cosmetic = document.querySelector('#cosmetic');
+
 
 food.addEventListener('click', function() {
   getDataFood();
@@ -130,4 +133,37 @@ document.addEventListener("DOMContentLoaded", function() {
   document.addEventListener("scroll", lazyload);
   window.addEventListener("resize", lazyload);
   window.addEventListener("orientationChange", lazyload);
+});
+
+$(document).ready(function() {
+  // Select the target container using jQuery
+  const productContainer = $('#products-container');
+
+  // Attach a click event handler to the container
+  productContainer.on('click', function(event) {
+    // The event handler will be executed when any child element within the container is clicked
+    const clickedElement = event.target;
+    // ... Handle the click event based on the clickedElement ...
+    if ($(clickedElement).hasClass('thumbnail') || $(clickedElement).hasClass('nameProduct') || 
+        $(clickedElement).hasClass('price') || $(clickedElement).hasClass('lazy') || $(clickedElement).closest('.thumbnail').length) {
+      // Get the closest parent element with the class 'thumbnail'
+      const thumbnail = $(clickedElement).closest('.thumbnail');
+      // Get the values of the child elements within the thumbnail
+      const name = thumbnail.find('.nameProduct').text();
+      const img = thumbnail.find('#imgMain').attr('src');
+      const price = thumbnail.find('.price').text();
+      const state = thumbnail.find('#state').text();
+      const brand = thumbnail.find('.brand').text();
+      // console.log(name, img, price, brand, state);
+
+      localStorage.setItem('name', name);
+      localStorage.setItem('img', img);
+      localStorage.setItem('price', price);
+      localStorage.setItem('state', state);
+      localStorage.setItem('brand', brand);
+    }
+
+    // chuyển qua trang chi tiết sản phẩm
+    window.location.href = 'DetailProduct.html';
+  });
 });

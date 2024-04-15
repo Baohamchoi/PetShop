@@ -161,20 +161,24 @@ function renderMenu() {
                                 SẢN PHẨM
                             </a>
                             <ul class="dropdown-menu">
-                                <li class="dropdown-item" id="food">
-                                    <a href="../HTML/products.html" class="nav-link"
+                                <li class="dropdown-item">
+                                    <a href="../HTML/products.html" class="nav-link" id="all"
+                                        >TẤT CẢ</a                                
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="../HTML/products.html" class="nav-link" id="food"
                                         >THỨC ĂN</a                                
                                 </li>
-                                <li class="dropdown-item" id="clothes">
-                                    <a href="../HTML/products.html" class="nav-link"
+                                <li class="dropdown-item">
+                                    <a href="../HTML/products.html" class="nav-link" id="clothes"
                                         >QUẦN ÁO & PHỤ KIỆN</a
                                 </li>
-                                <li class="dropdown-item" id="cosmetic">
-                                    <a href="../HTML/products.html" class="nav-link"
+                                <li class="dropdown-item">
+                                    <a href="../HTML/products.html" class="nav-link" id="cosmetic"
                                         >MỸ PHẨM & LÀM ĐẸP</a
                                 </li>
-                                <li class="dropdown-item" id="cleaning">
-                                    <a href="../HTML/products.html" class="nav-link"
+                                <li class="dropdown-item">
+                                    <a href="../HTML/products.html" class="nav-link" id="cleaning"
                                         >DỤNG CỤ VỆ SINH</a
                                 </li>
                             </ul>
@@ -582,6 +586,9 @@ function renderProductMenu() {
                                 SẢN PHẨM
                             </a>
                             <ul class="dropdown-menu">
+                                <li class="dropdown-item" id="all">
+                                    TẤT CẢ
+                                </li>
                                 <li class="dropdown-item" id="food">
                                     THỨC ĂN
                                 </li>
