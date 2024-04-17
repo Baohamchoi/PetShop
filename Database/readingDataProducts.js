@@ -166,8 +166,27 @@ $(document).ready(function() {
     // chuyển qua trang chi tiết sản phẩm
     if ($(clickedElement).hasClass('themGioHang')) {
       // nếu ấn vào nút thêm vào giỏ hàng thì thông tin của sản phẩm sẽ được chuyển qua js file cart.js
-      
 
+      // Lấy thông tin sản phẩm
+      // const name = localStorage.getItem('name');
+      // const img = localStorage.getItem('img');
+      // const price = localStorage.getItem('price');
+      // const state = localStorage.getItem('state');
+      // const brand = localStorage.getItem('brand');
+      
+      // // Lưu thông tin sản phẩm vào một mảng trong localStorage
+      // let products = JSON.parse(localStorage.getItem('products'));
+      // if (products === null) {
+      //   products = [];
+      // } 
+      // products.push({
+      //   name: name,
+      //   img: img,
+      //   price: price,
+      //   state: state,
+      //   brand: brand,
+      //   quantity: 1
+      // });
     } else {
       window.location.href = 'DetailProduct.html';
     }
