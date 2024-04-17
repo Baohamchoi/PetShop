@@ -92,3 +92,20 @@ body {
     margin-left: 100px;
 }
 
+/* Tổng thanh toán */
+.thanhToanContain .txtChonTatCa {
+    margin-left: 20px;
+}
+
+.thanhToanContain .txtXoa {
+    margin-left: 80px;
+}
+
+.thanhToanContain .txtSPHetHang {
+    margin-left: 80px;
+}
+
+.thanhToanContain .txtTongThanhToan {
+    margin-left: 260px;
+    margin-right: 80px;
+}

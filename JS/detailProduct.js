@@ -88,8 +88,6 @@ $(document).ready(function() {
     var name = $('#name').text();
     var img = $('#img').attr('src');
     var price = $('#price').text();
-    var state = $('#state').text();
-    var brand = $('#brand').text();
     var amount = $('#amountNum').val();
 
     localStorage.setItem('name', name);

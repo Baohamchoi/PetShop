@@ -640,7 +640,8 @@ function renderProductMenu() {
                                 src="../Images/Logo/logo giỏ hàng.png"
                                 alt=""
                                 class="cart-icon"
-                        /></a>
+                        /> <div class="numInCart text-light rounded-circle bg-danger d-flex justify-content-center" style="width: 30px; 
+                        position: absolute; bottom: 54px; right: 200px;">0</div></a>
                         <a href="" data-bs-toggle="modal" data-bs-target="#formModal"
                             ><img
                                 src="../Images/Logo/Logo tài khoản.png"

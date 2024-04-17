@@ -165,8 +165,9 @@ $(document).ready(function() {
 
     // chuyển qua trang chi tiết sản phẩm
     if ($(clickedElement).hasClass('themGioHang')) {
-      // nếu ấn vô đây thì không có chuyển trang
+      // nếu ấn vào nút thêm vào giỏ hàng thì thông tin của sản phẩm sẽ được chuyển qua js file cart.js
       
+
     } else {
       window.location.href = 'DetailProduct.html';
     }
