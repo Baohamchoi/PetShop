@@ -1,0 +1,10 @@
+{
+    "folders": [
+		{
+			"path": "../../../BTThucHanh/Tuan08"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "PetShop"
+    }
+}

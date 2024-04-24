@@ -243,9 +243,9 @@ function renderMenu() {
                     <form >
                         <h1>Tạo tài khoản</h1>
                         <div class="social-icons">
-                            <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="icon"><img src="../Images/Logo/icons8-google-30.png" alt=""></a>
+                            <a href="#" class="icon"><img src="../Images/Logo/icons8-facebook-30.png" alt=""></a>
+                            <a href="#" class="icon"><img src="../Images/Logo/icons8-github-30.png" alt=""></a>
                         </div>
                         <span>Hoặc sử dụng email của bạn để đăng ký</span>
                         <input type="text" placeholder="Name">
@@ -258,9 +258,9 @@ function renderMenu() {
                     <form >
                         <h1>Đăng nhập</h1>
                         <div class="social-icons">
-                            <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="icon"><img src="../Images/Logo/icons8-google-30.png" alt=""></a>
+                        <a href="#" class="icon"><img src="../Images/Logo/icons8-facebook-30.png" alt=""></a>
+                        <a href="#" class="icon"><img src="../Images/Logo/icons8-github-30.png" alt=""></a>
                       
                         </div>
                         <span>Hoặc sử dụng mật khẩu email của bạn</span>
@@ -326,22 +326,23 @@ function renderFooter() {
       <script src="../Boostrap/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <footer class="footer">
-        <div class="container">
-            <div class="row footer-row">
-                <div class="col footer-col">
-                    <a href="../HTML/home.html">
-                        <img
-                            src="../Images/Logo/Logo.png"
-                            alt=""
-                            class="logo"
-                        />
-                        <span class="logo-title">PET SHOP</span>
-                    </a>
-                </div>
-                <div class="col footer-col">
-                    <h3 class="footer-title">CHÍNH SÁCH DỊCH VỤ</h3>
-                    <ul class="footer-list">
+        <footer class="footer">
+            <div class="container">
+                <div class="row footer-row">
+                    <div class="col footer-col">
+                        <a href="../HTML/home.html">
+                            <img
+                                src="../Images/Logo/Logo.png"
+                                alt=""
+                                class="logo"
+                            />
+                            <span class="logo-title">PET SHOP</span>
+                        </a>
+                    </div>
+                    <div class="col footer-col">
+                        <h3 class="footer-title" onclick="toggleFooterList(this)">CHÍNH SÁCH DỊCH VỤ <span class="toggle-icon">+</span></h3>
+                    
+                    <ul class="footer-list hidden">
                         <li>
                             <a href="">Chính Sách Bảo Mật</a>
                         </li>
@@ -353,14 +354,12 @@ function renderFooter() {
                         </li>
                     </ul>
                 </div>
+
                 <div class="col footer-col">
-                    <h3 class="footer-title">LIÊN HỆ CHÚNG TÔI</h3>
-                    <ul class="footer-list">
+                    <h3 class="footer-title" onclick="toggleFooterList(this)">LIÊN HỆ CHÚNG TÔI <span class="toggle-icon">+</span></h3>
+                    <ul class="footer-list hidden">
                         <li>
-                            <a href=""
-                                >Địa Chỉ: 116 Đường 3 Tháng 2, Phường 12,
-                                Quận 10, TP.Hồ Chí Minh</a
-                            >
+                            <a href="">Địa Chỉ: 116 Đường 3 Tháng 2, Phường 12, Quận 10, TP.Hồ Chí Minh</a>
                         </li>
                         <li>
                             <a href="">Hotline: 097430095</a>
@@ -370,53 +369,43 @@ function renderFooter() {
                         </li>
                     </ul>
                 </div>
+
                 <div class="col footer-col">
-                    <h3 class="footer-title">MẠNG XÃ HỘI</h3>
-                    <ul class="footer-list">
+                    <h3 class="footer-title" onclick="toggleFooterList(this)">MẠNG XÃ HỘI <span class="toggle-icon">+</span></h3>
+                    <ul class="footer-list hidden">
                         <li>
                             <a href="" class="footer-social">
-                                <img
-                                    src="../Images/TrangChinh/Facebook.svg"
-                                    alt=""
-                                />
+                                <img src="../Images/TrangChinh/Facebook.svg" alt=""/>
                                 <span>Facebook</span>
                             </a>
                         </li>
                         <li>
                             <a href="" class="footer-social">
-                                <img
-                                    src="../Images/TrangChinh/Instargram.svg"
-                                    alt=""
-                                />
+                                <img src="../Images/TrangChinh/Instargram.svg" alt=""/>
                                 <span>Instargram</span>
                             </a>
                         </li>
                         <li>
                             <a href="" class="footer-social">
-                                <img
-                                    src="../Images/TrangChinh/Linked-in.svg"
-                                    alt=""
-                                />
+                                <img src="../Images/TrangChinh/Linked-in.svg" alt=""/>
                                 <span>Linked-in</span>
                             </a>
                         </li>
                         <li>
-                            <a href=" " class="footer-social">
-                                <img
-                                    src="../Images/TrangChinh/Twitter.svg"
-                                    alt=""
-                                />
+                            <a href="" class="footer-social">
+                                <img src="../Images/TrangChinh/Twitter.svg" alt=""/>
                                 <span>Twitter</span>
                             </a>
                         </li>
                     </ul>
                 </div>
+
+                </div>
+                <div class="copyright">
+                    <p>Copyright 2024 © PET SHOP © All rights reserved.</p>
+                </div>
             </div>
-            <div class="copyright">
-                <p>Copyright 2024 © PET SHOP © All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 </html>`;
 
@@ -724,6 +713,18 @@ function renderProductMenu() {
         produtcMenu.innerHTML = menuProductsString;
     }
 } 
+function toggleFooterList(element) {
+    const list = element.nextElementSibling;
+    const icon = element.querySelector('.toggle-icon');
+
+    if (list.style.display === 'none' || list.style.display === '') {
+        list.style.display = 'block';
+        icon.textContent = '-';
+    } else {
+        list.style.display = 'none';
+        icon.textContent = '+';
+    }
+}
 
 renderMenu();
 renderProductMenu();
