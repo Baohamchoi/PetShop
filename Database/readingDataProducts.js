@@ -149,34 +149,87 @@ $(document).ready(function() {
       localStorage.setItem('price', price);
       localStorage.setItem('state', state);
       localStorage.setItem('brand', brand);
-    }
 
-    // chuyển qua trang chi tiết sản phẩm
+      // Thêm giỏ hàng
+
+      const btn_themGioHang = $(clickedElement).closest('.thumbnail').find('.themGioHang');
+
+      if (btn_themGioHang.length > 0) {
+        btn_themGioHang.off('click').on('click', function() {
+          const numInCart = document.getElementById("abc+numInCart");
+
+
+          // Lấy giá trị hiện tại của số lượng sản phẩm trong giỏ hàng
+          let currentCartCount = parseInt(numInCart.textContent) || 0;
+
+          // Tăng số lượng sản phẩm trong giỏ hàng
+          currentCartCount++;
+
+          // Cập nhật giá trị hiển thị trong abc+numInCart
+          numInCart.textContent = currentCartCount;
+
+
+        });
+      }
+  }
+
+    // if (btn_themGioHang.length) {
+    //   // Lấy thông tin sản phẩm
+    //   const name = localStorage.getItem('name');
+    //   const img = localStorage.getItem('img');
+    //   const price = localStorage.getItem('price');
+    //   const state = localStorage.getItem('state');
+    //   const brand = localStorage.getItem('brand');
+      
+    //   // Lưu thông tin sản phẩm vào một mảng trong localStorage
+    //   let products = JSON.parse(localStorage.getItem('products'));
+    //   if (products === null) {
+    //     products = [];
+    //   } 
+    //   products.push({
+    //     name: name,
+    //     img: img,
+    //     price: price,
+    //     state: state,
+    //     brand: brand,
+    //     quantity: 1
+    //   });
+    //   localStorage.setItem('products', JSON.stringify(products));
+    // } else {
+    //   window.location.href = 'DetailProduct.html';
+    // }
+
+    // Chuyển qua trang chi tiết sản phẩm
     if ($(clickedElement).hasClass('themGioHang')) {
       // nếu ấn vào nút thêm vào giỏ hàng thì thông tin của sản phẩm sẽ được chuyển qua js file cart.js
 
+
       // Lấy thông tin sản phẩm
-      // const name = localStorage.getItem('name');
-      // const img = localStorage.getItem('img');
-      // const price = localStorage.getItem('price');
-      // const state = localStorage.getItem('state');
-      // const brand = localStorage.getItem('brand');
-      
-      // // Lưu thông tin sản phẩm vào một mảng trong localStorage
-      // let products = JSON.parse(localStorage.getItem('products'));
-      // if (products === null) {
-      //   products = [];
-      // } 
-      // products.push({
-      //   name: name,
-      //   img: img,
-      //   price: price,
-      //   state: state,
-      //   brand: brand,
-      //   quantity: 1
-      // });
+      const name = localStorage.getItem('name');
+      const img = localStorage.getItem('img');
+      const price = localStorage.getItem('price');
+      const state = localStorage.getItem('state');
+      const brand = localStorage.getItem('brand');
+
+      let products = JSON.parse(localStorage.getItem('products'));
+      if (products === null) {
+        products = [];
+      } 
+      products.push({
+        name: name,
+        img: img,
+        price: price,
+        state: state,
+        brand: brand,
+        quantity: 1
+      });
+
+      localStorage.setItem('products', JSON.stringify(products));
+      // console.log(products);
+
     } else {
       window.location.href = 'DetailProduct.html';
     }
-  });
+   });
+   
 });

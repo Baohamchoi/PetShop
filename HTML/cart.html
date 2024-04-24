@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Boostrap/bootstrap.min.css">
     <script src="../Boostrap/bootstrap.bundle.min.js"></script>
+    <script src="../JQuery/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="../CSS/cart.css">
     <title>Cart</title>
 </head>
@@ -25,7 +26,7 @@
     <header id="headerMenu"></header>
     <!-- Body -->
     <div class="container">
-        <div class="container-fluid d-flex flex-column ">
+        <div class="container-fluid d-flex flex-column">
             <div class="title-contain bg-secondary d-flex flex-row ps-5 align-items-center">
                 <div class="square"></div>
                 <label class="ms-2">Sản phẩm</label>
@@ -34,8 +35,8 @@
                 <label for="" class="lb-soTien">Số tiền</label>
                 <label for="" class="lb-thaoTac">Thao tác</label>
             </div>
-            <div class="products-contain bg-secondary d-flex flex-column mt-4">
-                <div class="product d-flex flex-row align-items-center ps-5">
+            <div id="products-contain" class="products-contain bg-secondary d-flex flex-column mt-4">
+                <!-- <div class="product d-flex flex-row align-items-center ps-5">
                     <div class="square sp1"></div>
                     <img src="../Images/Sản phẩm/Bánh thưởng cho chó vị khoai môn VEGEBRAND Orgo Dental Bites Milky Taro/banh-thuong-cho-cho-vi-khoai-mon-vegebrand-orgo-dental-bites-milky-taro.jpg" alt="" class="img ms-2">
                     <label for="" class="name ms-4">Xương cho chó vị thịt bò VEGEBRAND Orgo Nutrients Beef</label>
@@ -58,7 +59,7 @@
                     <div>
                         <button class="delete text-light btn btn-danger">Xóa</button>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="thanhToanContain mt-5 bg-secondary text-light d-flex flex-row align-items-center ps-5 pt-4 pb-4">
                 <div class="square sp2"></div>
@@ -66,12 +67,14 @@
                 <button class="txtXoa btn btn-danger" for="">Xóa</button>
                 <label class="txtSPHetHang" for="">Bỏ sản phẩm hết hàng</label>
                 <label class="txtTongThanhToan" for="">Tổng thanh toán (<label for="">1</label>): <label for="">120.000 VND</label></label>
-                <button class="btn btn-success">Đặt hàng</button>
+                <button class="btn btn-success" id="btn-datHang">Đặt hàng</button>
             </div>
         </div>
         
     </div>
-    <script src="../JS/cart.jss"></script>
-    <script src="../TongHopTrang/Header_Footer/Header_Footer_Menu.js"></script>
+    <script src="../JS/cart.js"></script>
+    <footer id="footerMenu"></footer>
+    <script src="../TongHopTrang/Header_Footer/Header_Footer_Menu.js"></script>\
+    <script src="../JS/form_dangki.js"></script>
 </body>
 </html>

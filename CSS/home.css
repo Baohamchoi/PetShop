@@ -445,10 +445,12 @@ label {
 .carousel-control-next{
     margin-left: 200px;
 }
-
+.btn-right {
+    float: right;
+}
 @media (min-width:1000px) {
     .btn-right {
-        margin-left: 156px;
+        margin-left: 158px;
     }
     .features-desc.desc-1 {
         margin-top: 20px;
