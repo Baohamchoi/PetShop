@@ -170,11 +170,11 @@ a {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.78;
-    width: 525px;
+  
 }
 .features-desc.desc-1 {
     margin-top: 20px;
-    margin-left: 400px;
+    
 }
 .features .features-list {
     margin-top: 50px;
@@ -263,6 +263,9 @@ a {
     margin-left: 80px;
     color: rgb(213, 36, 36);
     font-weight: bold;
+}
+.plr10 {
+    padding-bottom: 10px;
 }
 .plr5 {
     padding-bottom: 5px;
@@ -427,3 +430,67 @@ label {
   
     padding: 0px 45px 20px 45px;
 }   
+.control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #ECECEC;
+    color: black;
+    border-radius: 50%;
+    border: 0px;
+    margin-top: 200px;
+}
+.carousel-control-next{
+    margin-left: 200px;
+}
+
+@media (min-width:1000px) {
+    .btn-right {
+        margin-left: 156px;
+    }
+    .features-desc.desc-1 {
+        margin-top: 20px;
+        margin-left: 400px;
+    }
+    
+}
+@media(max-width:756px) {
+    .partner-img img{
+        width: 65px;
+        height: 65px;
+    }
+    .features-desc.desc-1 {
+        font-size: 16px;
+    }
+    .col-md-4.features-item:first-child {
+        margin-bottom: 100px;
+    }
+    .col-md-4.features-item:nth-child(2) {
+        margin-bottom: 130px;
+    }
+    .row.book-row {
+        width: 300px;
+    }
+    .col-md-9.book-content{
+        width: 300px;
+    }
+    .col-md-9.book-content .title{
+       width: 400px;
+       margin-left: -80px;
+       font-size: 35px;
+    }
+    .col-md-9.book-content .book-desc {
+        width: 350px;
+        margin-left: -80px;
+    }
+    .col-md-3 .cta-btn {
+        margin-top: 15px;
+        margin-left: -9px;
+    }
+    .col.introduce-media {
+        margin-top: 45px;
+    }
+   
+}

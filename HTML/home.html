@@ -95,6 +95,19 @@
             href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         />
         <script src="../Boostrap/bootstrap.bundle.min.js"></script>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            .carousel-control-prev,
+            .carousel-control-next {
+            display: block !important;
+        }
+</style>
+        
     </head>
     <body>
         <!-- Header -->
@@ -149,7 +162,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-xl introduce-media">
+                        <div class="col introduce-media">
                             <figure class="introduce-images">
                                 <img
                                     src="../Images/Ảnh trang dịch vụ/khach-san-cho-meo-trong-giu-thu-cung-pet-hotel.jpg"
@@ -175,7 +188,7 @@
                         nhất
                     </p>
                     <div class="row features-list">
-                        <div class="col-4 features-item">
+                        <div class="col-md-4  features-item">
                             <a href="../HTML/spa.html"
                                 ><img
                                     src="../Images/TrangChinh/Grooming.jpg"
@@ -192,7 +205,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-4 features-item">
+                        <div class="col-md-4  features-item">
                             <a href="../HTML/khachsan.html"
                                 ><img
                                     src="../Images/TrangChinh/Hotel.png"
@@ -209,7 +222,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-4 features-item">
+                        <div class="col-md-4  features-item">
                             <a href="../HTML/suckhoe.html">
                                 <img
                                     src="../Images/TrangChinh/Veterinary.png"
@@ -231,86 +244,292 @@
             <section class="products">
                 <div class="container">
                     <h2 class="title">Sản Phẩm Nổi Bật</h2>
-                    <div class="read-more"><a href="../HTML/products.html">Xem Thêm</a></div>
-                    <div class="row product-list">
-                        <div class="col-md-3 col-sm-4 col-xs-6 plr5">
-                            <div class="product-item">
-                                <div class="product-img">
-                                    <a href="../HTML/products.html">
-                                        <img
-                                            src="../Images/TrangChinh/Food1.jpg"
-                                            alt=""
-                                            class="product-item_thumb img-fluid"
-                                            id="img"
-                                        />
-                                    </a>
+                    <div class="read-more"><a href="../HTML/products.html">Xem Thêm</a></div> 
+                    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                        <div class="control">
+                         <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                            <button class="control-btn">
+                                  <svg
+                                      width="8"
+                                      height="14"
+                                      viewBox="0 0 8 14"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/000/svg"
+                                  >
+                                      <path
+                                          d="M7 1L1 7L7 13"
+                                          stroke="currentColor"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                      />
+                                  </svg>
+                              </button>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                             <button class="control-btn btn-right">
+                               <svg
+                                  width="8"
+                                  height="14"
+                                  viewBox="0 0 8 14"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/8000/svg"
+                              >
+                                  <path
+                                      d="M1 1L7 7L1 13"
+                                      stroke="currentColor"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                  />
+                              </svg>
+                          </button>
+                        </a></div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-interval="000 ">
+                            <div class="row product-list">
+                                <div class="col plr5">
+                                    <div class="product-item">
+                                        <div class="product-img">
+                                            <a href="../HTML/products.html">
+                                                <img
+                                                    src="../Images/TrangChinh/Food1.jpg"
+                                                    alt=""
+                                                    class="product-item_thumb img-fluid"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="sub-title">
+                                                THỨC ĂN CHO MÈO ROYAL CANNIN INDOOR
+                                            </h3>
+                                            <span class="price">956.000VND</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="product-info">
-                                    <h3 class="sub-title" id="nameProduct">
-                                        THỨC ĂN CHO MÈO ROYAL CANNIN INDOOR
-                                    </h3>
-                                    <span class="price" id="price">956.000VND</span>
+                                <div class="col plr5">
+                                    <div class="product-item">
+                                        <div class="product-img">
+                                            <a href="../HTML/products.html">
+                                                <img
+                                                    src="../Images/TrangChinh/Food3.jpg"
+                                                    alt=""
+                                                    class="product-item_thumb img-fluid"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="sub-title">
+                                                THỨC ĂN ƯỚT ROYAL CANIN MAXI ADULT
+                                            </h3>
+                                            <span class="price">451.000VND</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col  plr5">
+                                    <div class="product-item">
+                                        <div class="product-img">
+                                            <a href="../HTML/products.html">
+                                                <img
+                                                    src="../Images/TrangChinh/Food2.jpg"
+                                                    alt=""
+                                                    class="product-item_thumb img-fluid"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="sub-title">
+                                                THỨC ĂN CHO MÈO ROYAL CANIN KITTEN
+                                            </h3>
+                                            <span class="price">946.000VND</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col plr5">
+                                    <div class="product-item">
+                                        <div class="product-img">
+                                            <a href="../HTML/products.html">
+                                                <img
+                                                    src="../Images/TrangChinh/Food4.jpg"
+                                                    alt=""
+                                                    class="product-item_thumb img-fluid"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="sub-title">
+                                                THỨC ĂN ƯỚT ROYAL CANIN MEDIUM ADULT
+                                            </h3>
+                                            <span class="price">479.000VND</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6 plr5">
-                            <div class="product-item">
-                                <div class="product-img">
-                                    <a href="../HTML/products.html">
-                                        <img
-                                            src="../Images/TrangChinh/Food3.jpg"
-                                            alt=""
-                                            class="product-item_thumb img-fluid"
-                                        />
-                                    </a>
+                          </div>
+                          <div class="carousel-item" data-interval="000">
+                            <div class="row product-list">
+                                <div class="col plr5">
+                                    <div class="product-item">
+                                        <div class="product-img">
+                                            <a href="../HTML/products.html">
+                                                <img
+                                                    src="../Images/TrangChinh/Food5.jpg"
+                                                    alt=""
+                                                    class="product-item_thumb img-fluid"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="sub-title">
+                                                THỨC ĂN ƯỚT ROYAL CANIN MEDIUM PUPPY
+                                            </h3>
+                                            <span class="price">546.000VND</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="product-info">
-                                    <h3 class="sub-title">
-                                        THỨC ĂN ƯỚT ROYAL CANIN MAXI ADULT
-                                    </h3>
-                                    <span class="price">451.000VND</span>
+                                <div class="col plr5">
+                                    <div class="product-item">
+                                        <div class="product-img">
+                                            <a href="../HTML/products.html">
+                                                <img
+                                                    src="../Images/TrangChinh/Food6.jpg"
+                                                    alt=""
+                                                    class="product-item_thumb img-fluid"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="sub-title">
+                                               THỨC ĂN CHO MÈO ROYAL CANIN KITTEN INSTINCTIVE
+                                            </h3>
+                                            <span class="price">465.000VND</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col  plr5">
+                                    <div class="product-item">
+                                        <div class="product-img">
+                                            <a href="../HTML/products.html">
+                                                <img
+                                                    src="../Images/TrangChinh/Food7.jpg"
+                                                    alt=""
+                                                    class="product-item_thumb img-fluid"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="sub-title">
+                                                THỨC ĂN ƯỚT ROYAL CANIN MINI ADULT
+                                            </h3>
+                                            <span class="price">418.000VND</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col plr5">
+                                    <div class="product-item">
+                                        <div class="product-img">
+                                            <a href="../HTML/products.html">
+                                                <img
+                                                    src="../Images/TrangChinh/Food8.jpg"
+                                                    alt=""
+                                                    class="product-item_thumb img-fluid"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="sub-title">
+                                                THỨC ĂN CHO MÈO ROYAL CANIN STERILISED WET
+                                            </h3>
+                                            <span class="price">418.000VND</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6 plr5">
-                            <div class="product-item">
-                                <div class="product-img">
-                                    <a href="../HTML/products.html">
-                                        <img
-                                            src="../Images/TrangChinh/Food2.jpg"
-                                            alt=""
-                                            class="product-item_thumb img-fluid"
-                                        />
-                                    </a>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="row product-list">
+                                <div class="col plr5">
+                                    <div class="product-item">
+                                        <div class="product-img">
+                                            <a href="../HTML/products.html">
+                                                <img
+                                                    src="../Images/TrangChinh/Food1.jpg"
+                                                    alt=""
+                                                    class="product-item_thumb img-fluid"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="sub-title">
+                                                THỨC ĂN CHO MÈO ROYAL CANNIN INDOOR
+                                            </h3>
+                                            <span class="price">956.000VND</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="product-info">
-                                    <h3 class="sub-title">
-                                        THỨC ĂN CHO MÈO ROYAL CANIN KITTEN
-                                    </h3>
-                                    <span class="price">946.000VND</span>
+                                <div class="col plr5">
+                                    <div class="product-item">
+                                        <div class="product-img">
+                                            <a href="../HTML/products.html">
+                                                <img
+                                                    src="../Images/TrangChinh/Food3.jpg"
+                                                    alt=""
+                                                    class="product-item_thumb img-fluid"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="sub-title">
+                                                THỨC ĂN ƯỚT ROYAL CANIN MAXI ADULT
+                                            </h3>
+                                            <span class="price">451.000VND</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col  plr5">
+                                    <div class="product-item">
+                                        <div class="product-img">
+                                            <a href="../HTML/products.html">
+                                                <img
+                                                    src="../Images/TrangChinh/Food2.jpg"
+                                                    alt=""
+                                                    class="product-item_thumb img-fluid"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="sub-title">
+                                                THỨC ĂN CHO MÈO ROYAL CANIN KITTEN
+                                            </h3>
+                                            <span class="price">946.000VND</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col plr5">
+                                    <div class="product-item">
+                                        <div class="product-img">
+                                            <a href="../HTML/products.html">
+                                                <img
+                                                    src="../Images/TrangChinh/Food4.jpg"
+                                                    alt=""
+                                                    class="product-item_thumb img-fluid"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="sub-title">
+                                                THỨC ĂN ƯỚT ROYAL CANIN MEDIUM ADULT
+                                            </h3>
+                                            <span class="price">479.000VND</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                          </div>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6 plr5">
-                            <div class="product-item">
-                                <div class="product-img">
-                                    <a href="../HTML/products.html">
-                                        <img
-                                            src="../Images/TrangChinh/Food4.jpg"
-                                            alt=""
-                                            class="product-item_thumb img-fluid"
-                                        />
-                                    </a>
-                                </div>
-                                <div class="product-info">
-                                    <h3 class="sub-title">
-                                        THỨC ĂN ƯỚT ROYAL CANIN MEDIUM ADULT
-                                    </h3>
-                                    <span class="price">479.000VND</span>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
+                   
+                </div>
+                    
                 </div>
             </section>
             <!-- Partner -->
@@ -337,31 +556,31 @@
                         </div>
                     </div>
                     <div class="row partner-img">
-                        <div class="col-2">
+                        <div class="col-2 col-md-2">
                             <img
                                 src="../Images/TrangChinh/Partner3.png"
                                 alt=""
                             />
                         </div>
-                        <div class="col-2">
+                        <div class="col-2 col-md-2">
                             <img
                                 src="../Images/TrangChinh/Partner2.png"
                                 alt=""
                             />
                         </div>
-                        <div class="col-3 d-flex justify-content-center">
+                        <div class="col-3 col-md-3 d-flex justify-content-center">
                             <img
                                 src="../Images/TrangChinh/Partner1.jpg"
                                 alt=""
                             />
                         </div>
-                        <div class="col-2">
+                        <div class="col-2 col-md-2 " >
                             <img
                                 src="../Images/TrangChinh/Partner4.jpg"
                                 alt=""
                             />
                         </div>
-                        <div class="col-2">
+                        <div class="col-2 col-md-2 ">
                             <img
                                 src="../Images/TrangChinh/Partner5.jpg"
                                 alt=""
@@ -373,8 +592,8 @@
             <!-- Book -->
             <section class="book">
                 <div class="container">
-                    <div class="row book-row">
-                        <div class="col-9 book-content">
+                    <div class="row book-row align-items-center">
+                        <div class="col-md-9 book-content">
                             <h2 class="title">
                                 Đặt lịch làm đẹp ngay với PET SHOP!
                             </h2>
@@ -384,7 +603,7 @@
                                 chúng tôi ngay!
                             </p>
                         </div>
-                        <div class="col-3">
+                        <div class="col-md-3 ">
                             <a href="" class="btn btn-dark cta-btn" data-bs-toggle="modal" data-bs-target="#myModal">Đặt Hẹn</a>
                         </div>
                     </div>
@@ -478,3 +697,6 @@
         <script src="../JS/form_dangki.js"></script>
     </body>
 </html>
+
+
+

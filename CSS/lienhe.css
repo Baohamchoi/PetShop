@@ -57,4 +57,17 @@ body {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    transition: all 0.5s ease;
+}
+.contact-thumb {
+    overflow: hidden;
+}
+.contact-thumb:hover .contact-map {
+    transform: scale(1.8);
+    cursor: pointer;
+}
+@media(max-width:756px) {
+    .contact-title {
+        margin-top: 30px;
+    }
 }
