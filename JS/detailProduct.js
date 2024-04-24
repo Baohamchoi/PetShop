@@ -38,21 +38,6 @@ $(document).ready(function() {
         $('#option3').attr('style', 'background-color: white; color: black;');
         $('#option4').attr('style', 'background-color: black; color: white;');
     });
-
-    // $('#removeAmount').on('click', function() {
-    //     var amount = document.getElementById('amount').value;
-    //     if (amount > 1) {
-    //         amount--;
-    //         $('#amount').text(amount);
-    //     }
-    //     console.log(amount);
-    // });
-
-    // $('#addAmount').on('click', function() {
-    //     var amount = document.getElementById('amount').value;
-    //     amount++;
-    //     $('#amount').text(amount);
-    // });
     
   // Get the input element and buttons
   const amountInput = $('#amountNum');

@@ -162,10 +162,6 @@ function renderMenu() {
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-item">
-                                    <a href="../HTML/products.html" class="nav-link" id="all"
-                                        >TẤT CẢ</a                                
-                                </li>
-                                <li class="dropdown-item">
                                     <a href="../HTML/products.html" class="nav-link" id="food"
                                         >THỨC ĂN</a                                
                                 </li>
@@ -215,12 +211,13 @@ function renderMenu() {
                         />
                     </div>
                     <div class="header-action">
-                        <a href=""
+                        <a href="../HTML/cart.html" style="position: relative;"
                             ><img
                                 src="../Images/Logo/logo giỏ hàng.png"
                                 alt=""
                                 class="cart-icon"
-                        /></a>
+                        /> <div class="numInCart text-light rounded-circle bg-danger d-flex justify-content-center" style="width: 30px; 
+                        position: absolute; bottom: 32px; left: 22px;">0</div> </a>
                         <a href="" data-bs-toggle="modal" data-bs-target="#formModal"
                             ><img
                                 src="../Images/Logo/Logo tài khoản.png"
@@ -575,9 +572,6 @@ function renderProductMenu() {
                                 SẢN PHẨM
                             </a>
                             <ul class="dropdown-menu">
-                                <li class="dropdown-item" id="all">
-                                    TẤT CẢ
-                                </li>
                                 <li class="dropdown-item" id="food">
                                     THỨC ĂN
                                 </li>
@@ -624,13 +618,13 @@ function renderProductMenu() {
                         />
                     </div>
                     <div class="header-action">
-                        <a href=""
+                        <a href="../HTML/cart.html"
                             ><img
                                 src="../Images/Logo/logo giỏ hàng.png"
                                 alt=""
                                 class="cart-icon"
-                        /> <div class="numInCart text-light rounded-circle bg-danger d-flex justify-content-center" style="width: 30px; 
-                        position: absolute; bottom: 54px; right: 200px;">0</div></a>
+                        /> <div id="abc+numInCart" class="numInCart text-light rounded-circle bg-danger d-flex justify-content-center" style="width: 30px; 
+                        position: absolute; bottom: 54px; right: 200px;">0</div> </a>
                         <a href="" data-bs-toggle="modal" data-bs-target="#formModal"
                             ><img
                                 src="../Images/Logo/Logo tài khoản.png"
@@ -708,9 +702,9 @@ function renderProductMenu() {
         <script type="module" src="../Database/readingDataProducts.js"></script>
     </html>`;
 
-    const produtcMenu = document.getElementById("productsMenu");
-    if (produtcMenu) {
-        produtcMenu.innerHTML = menuProductsString;
+    const productMenu = document.getElementById("productsMenu");
+    if (productMenu) {
+        productMenu.innerHTML = menuProductsString;
     }
 } 
 function toggleFooterList(element) {
@@ -731,3 +725,12 @@ renderProductMenu();
 renderFooter();
 
 // Đoạn code có chứa Boostrap nên cần import thư viện js, css của Boostrap rồi mới chạy
+
+// // Lấy thông tin danh sản phẩm vào giỏ hàng
+// const lengthNumCart = localStorage.getItem('length');
+// localStorage.setItem('numInCart', lengthNumCart);
+
+// // Thay đổi giá trị trong id = numInCart thành lengthNumCart
+// document.querySelector('.numInCart').textContent = lengthNumCart;
+
+// window.parent.postMessage({ numInCart: lengthNumCart }, '*');
