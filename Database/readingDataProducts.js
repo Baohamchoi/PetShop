@@ -42,9 +42,21 @@ async function getDataCosmetic() {
   });
 }
 
-// Collection cleaning
+// Collection clothes
 async function getDataClothes() {
   const foodCol = collection(db, "clothes");
+  let productItems = "";
+  const querySnapshot = await getDocs(foodCol);
+  querySnapshot.forEach((doc) => {
+    const item = doc.data();
+    productItems += renderProductCard(item.name, item.price, item.imgMain, item.brand, item.state);
+    document.getElementById('products-container').innerHTML = productItems;
+  });
+}
+
+// Collection cleaning
+async function getDataCleaning() {
+  const foodCol = collection(db, "cleaning");
   let productItems = "";
   const querySnapshot = await getDocs(foodCol);
   querySnapshot.forEach((doc) => {
